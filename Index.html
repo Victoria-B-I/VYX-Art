@@ -12,11 +12,24 @@
         h2 {
             color: darkgoldenrod;
             text-shadow: 0 0 5px darkgoldenrod;
+            font-size: x-large;
         }
 
+        /* .header
+        {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        } */
+
         .Navbar {
-            margin-top: 10px;
-            margin-bottom: 100px;
+            margin-right: 50px;
+            position: absolute;
+            z-index: 2;
+
         }
 
 
@@ -49,6 +62,11 @@
             text-align: center;
         }
 
+        .Abtvyx
+        {
+            /* margin-top: 0; */
+        }
+
         .abouty {
             text-align: center;
             font-family: roboto;
@@ -60,11 +78,24 @@
             font-size: xx-large;
         }
 
+        iframe{
+            border: 10px solid white;
+            height: 300px;
+            width: 400px;
+        }
+
+        a :hover
+        {
+            background-color: gold;
+        }
+
         .Container {
             display: flex;
-            gap: 200px;
+            gap: 100px;
             margin-top: 30px;
             margin-bottom: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
         }
 
         .Cont {
@@ -75,17 +106,26 @@
 
         .Containy {
             display: flex;
-            gap: 200px;
+            gap: 100px;
+            margin-left: 180px;
+            margin-right: 100px;
+            margin-bottom: 150px;
         }
 
         .Conty {
             flex-direction: column;
             justify-content: center;
+            margin-left: 180px;
+            margin-right: 100px;
         }
 
 
         .Feedback {
             text-align: center;
+        }
+
+        #Text {
+            width: 300px;
         }
 
 
@@ -97,12 +137,6 @@
         }
 
 
-        #Butto {
-            padding: 5px;
-            background-color: darkgoldenrod;
-            color: black;
-        }
-
         form a :hover {
             color: whitesmoke;
             background: linear-gradient(45deg, red);
@@ -111,8 +145,7 @@
 
         }
 
-        #buto
-        {
+        #buto {
             border: 1.5px solid white;
             background-color: black;
             color: aliceblue;
@@ -126,18 +159,37 @@
         .Abt {
             margin-top: 50px;
             margin-bottom: 200px;
+            z-index: -2;
         }
 
-        #Wealth{
+        #Wealth {
             text-align: center;
         }
+
+        .form :hover {
+            padding: 5px;
+            background-color: black;
+            color: goldenrod;
+        }
+
+
+
+
     </style>
 
 </head>
 
 <body>
     <header>
-        <h1><b>VYX ART</b></h1>
+        <h1 class="Abtvyx"><b>VYX ART</b></h1>
+
+        <div class="header">
+
+                 <video autoplay muted loop id="Bg-video">
+            <source src="Bgvid1.mp4.mp4" type="video/mp4">
+        </video> 
+
+        </div>
 
         <nav class="Navbar">
             <img src="" alt="">
@@ -147,13 +199,19 @@
                 <li><a href="#Wealth">Wealth Brand</a></li>
                 <li><a href="Gallery.html">Gallery</a></li>
                 <li><a href="AnimeGalaxy.html">Anime Galaxy</a></li>
+                <li><a href="Merch.Html">Merch</a></li>
                 <li><a href="Blog.html">Blog</a></li>
                 <li><a href="#Contact">Contact</a></li>
                 <li><a href="#Faq">Faq</a></li>
             </ul>
 
         </nav>
+
+
     </header>
+
+    <!-- <section> -->
+    <!-- </section> -->
     <section class="Abt">
         <h2 id="About"><b>About</b></h2>
         <p class="abouty">Art is more than just art, it’s a bold fusion of vision, imagination, and style. We bring
@@ -182,10 +240,11 @@
     </section>
     <section id="Wealth">
         <h2>VYX&Wealth Brand</h2>
-        <iframe src="" title="Shop Here">
+        <br>
+        <iframe src="iframe.mp4.MP4" title="Shop Here">
         </iframe>
         <p><b>Shop Here</b></p>
-        <a><button id="buto">Download</button></a>
+        <a href="https://www.instagram.com/wealths.brand"><button id="buto">Download</button></a>
     </section>
     <br>
     <br>
@@ -201,15 +260,22 @@
 
             <div class="Cont">
                 <h2><b>The Artist Said What?</b></h2>
-                <p><i>"Creativity is allowing yourself to make mistakes, Art is knowing which ones to keep." -<b>Paul
-                            Keele</b></i></p>
-                <p><i>"You can't use up creativity, the more you use, the more you have." -<b>Maya Angelou</b></i></p>
-                <p><i>"The aim of the art is to represent not the outward appearance of things, but their inward
-                        significance." -<b>Aristotle</b></i></p>
-                <p><i>"Digital design is like painting, except the paint never dries." -<b>Neville Brody</b></i></p>
-                <p><i>"Art is not what you see, but what you make others see." -<b>Edgar Degas</b></i></p>
-                <p><i>"The world of reality has its limit, the world of imagination is boundless." </i></p>
-                <p><i>"Love Art in yourself, and not yourself in art." -<b>Konstantin Stanislavski</b></i></p>
+                <div class="para">
+                    <div class="scroll">
+                        <p><i>"Creativity is allowing yourself to make mistakes, Art is knowing which ones to keep."
+                                -<b>Paul
+                                    Keele</b></i></p>
+                        <p><i>"You can't use up creativity, the more you use, the more you have." -<b>Maya
+                                    Angelou</b></i></p>
+                        <p><i>"The aim of the art is to represent not the outward appearance of things, but their inward
+                                significance." -<b>Aristotle</b></i></p>
+                        <p><i>"Digital design is like painting, except the paint never dries." -<b>Neville Brody</b></i>
+                        </p>
+                        <p><i>"Art is not what you see, but what you make others see." -<b>Edgar Degas</b></i></p>
+                        <p><i>"The world of reality has its limit, the world of imagination is boundless." </i></p>
+                        <p><i>"Love Art in yourself, and not yourself in art." -<b>Konstantin Stanislavski</b></i></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -219,9 +285,12 @@
         <div class="Containy">
             <div class="Conty">
                 <h2 id="Contact"><b>Contact Us</b></h2>
-                <p>Instagram:</p>
+                <p>Instagram</p>
                 <p>Twitter</p>
                 <p>Whatsapp</p>
+                <br>
+                <br>
+                <p class="form"><a href="Form.html">Let's chat</a></p>
             </div>
             <div class="Conty">
                 <h2 id="Faq"><b>FAQ</b></h2>
@@ -233,34 +302,7 @@
                 <p><b>A:</b>Yes we do.</p>
             </div>
 
-            <div class="Conty">
-                <h2>Let's Create</h2>
-                <p>Want to commission a piece or explore our collections?<br> Fill out the form, let's co-create magic!
-                </p>
-                <form>
-                    <label for="Name"><b>Name:</b></label>
-                    <input type="text" id="texty" placeholder="Enter Your name"><br>
-                    <br>
-                    <label for="Phone Number"><b>Phone Number:</b></label>
-                    <input type="text" id="texty" placeholder="Enter Phone Number"><br>
-                    <br>
-                    <label for="Email"><b>Email Address:</b></label>
-                    <input type="text" id="texty" placeholder="Enter Email Address"><br>
-                    <br>
-                    <p><b>Any Special Request?</b></p>
-                    <label for="Request"></label>
-                    <input type="text" id="texty" placeholder="Enter Request Here">
-                    <br>
-                    <br>
-                    <a><button id="Butto" aria-placeholder="Submit">
-                            Submit</button></a>
-                </form>
 
-
-
-
-                </form>
-            </div>
         </div>
 
 
@@ -296,11 +338,11 @@
         <p>Is there anything you'd like us to add?</p>
         <form>
             <label for="Feedback"></label>
-            <input type="Text" id="Text">
+            <textarea id="Text"></textarea><br>
             <a><button id="Butto" aria-placeholder="Submit">
                     Submit</button></a>
         </form>
-        </form>
+
 
 
     </section>
