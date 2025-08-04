@@ -15,20 +15,24 @@
             font-size: x-large;
         }
 
-        /* .header
-        {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
+
+        #Bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 1200px;
+            object-fit: cover;
             z-index: -1;
-        } */
+        }
+
+        nav {
+            position: relative;
+            margin-bottom: 500px;
+        }
 
         .Navbar {
             margin-right: 50px;
-            position: absolute;
-            z-index: 2;
 
         }
 
@@ -50,6 +54,8 @@
             border-radius: 10px;
         }
 
+
+
         a {
             text-decoration-line: none;
             color: white;
@@ -62,30 +68,38 @@
             text-align: center;
         }
 
-        .Abtvyx
-        {
-            /* margin-top: 0; */
+        .Abtvyx {
+            margin-top: 0;
+            word-spacing: 5px;
+            letter-spacing: 4px;
+            font-size: 50px;
         }
+
+        .Abt {
+            margin-top: 300px;
+            margin-bottom: 500px;
+            font-size: x-large;
+        }
+
 
         .abouty {
             text-align: center;
             font-family: roboto;
-            font-size: large;
+            font-size: x-large;
         }
 
         #About {
             text-align: center;
-            font-size: xx-large;
+            font-size: 50px;
         }
 
-        iframe{
+        iframe {
             border: 10px solid white;
             height: 300px;
             width: 400px;
         }
 
-        a :hover
-        {
+        a :hover {
             background-color: gold;
         }
 
@@ -93,31 +107,77 @@
             display: flex;
             gap: 100px;
             margin-top: 30px;
-            margin-bottom: 50px;
+            margin-bottom: 400px;
             margin-left: 100px;
             margin-right: 100px;
+            word-spacing: 5px;
         }
 
         .Cont {
             flex-direction: column;
             justify-content: center;
+            background-color: black;
+        }
+
+        #news {
+            text-align: left;
+            color: darkgoldenrod;
+            font-size: 50px;
+        }
+
+        #new {
+            color: gold;
         }
 
 
         .Containy {
             display: flex;
-            gap: 100px;
-            margin-left: 180px;
+            gap: 50px;
+            margin-left: 100px;
             margin-right: 100px;
-            margin-bottom: 150px;
+            margin-bottom: 300px;
+            word-spacing: 5px;
+            font-size: large;
         }
+
+
+        .Conto {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 100px;
+            height: 800px;
+            margin-right: 1px;
+        }
+
 
         .Conty {
             flex-direction: column;
             justify-content: center;
-            margin-left: 180px;
+            margin-left: 1px;
             margin-right: 100px;
+            font-size: 20px;
         }
+
+        .Conte {
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-size: 20px;
+
+        }
+
+        #Contact
+        {
+            font-size: 40px;
+        }
+
+        #Faq
+        {
+            font-size: 40px;
+        }
+
 
 
         .Feedback {
@@ -156,25 +216,16 @@
             -ms-text-size-adjust: ;
         }
 
-        .Abt {
-            margin-top: 50px;
-            margin-bottom: 200px;
-            z-index: -2;
-        }
 
         #Wealth {
             text-align: center;
         }
 
         .form :hover {
-            padding: 5px;
+            padding: 3px;
             background-color: black;
             color: goldenrod;
         }
-
-
-
-
     </style>
 
 </head>
@@ -185,9 +236,9 @@
 
         <div class="header">
 
-                 <video autoplay muted loop id="Bg-video">
-            <source src="Bgvid1.mp4.mp4" type="video/mp4">
-        </video> 
+            <video autoplay muted loop id="Bg-video">
+                <source src="Bgvid1.mp4.mp4" type="video/mp4">
+            </video>
 
         </div>
 
@@ -241,7 +292,7 @@
     <section id="Wealth">
         <h2>VYX&Wealth Brand</h2>
         <br>
-        <iframe src="iframe.mp4.MP4" title="Shop Here">
+        <!-- <iframe src="iframe.mp4.MP4" title="Shop Here"> -->
         </iframe>
         <p><b>Shop Here</b></p>
         <a href="https://www.instagram.com/wealths.brand"><button id="buto">Download</button></a>
@@ -252,14 +303,71 @@
         <div class="Container">
 
             <div class=" Cont">
-                <h1>NEWS & UPDATES</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae et quas at impedit voluptates tenetur
-                    accusantium, quae fugiat sit maiores recusandae atque unde harum repellat cumque quo incidunt vitae
-                    perspiciatis!</p>
+                <h1 id="news">NEWS & UPDATES</h1>
+                <h2 id="new">1. Wallpaper as Collectible Art</h2>
+
+                <p>Artist-designed wallpaper is exploding as immersive, limited edition art objects, hand-painted and
+                    silkscreened installations by Laura Owens, Dominique Fung, Kerstin Brätsch, Kiriakos Tompolidis,
+                    Philip Wiegard, and more at Matthew Marks Gallery and Brooklyn’s Independent Art Fair.</p>
+
+                <p><strong>Read more:</strong> <a
+                        href="https://www.townandcountrymag.com/style/home-decor/a65488335/artist-wallpaper-trend-2025/"
+                        target="_blank">Is Wallpaper the Art World’s Next Big Thing? (Town &amp; Country)</a></p>
+
+
+
+                <h2 id="new">Matthew Barney’s <em>TACTICAL parallax</em> at AIR Aspen</h2>
+
+                <p>Provocateur Matthew Barney premieres a live “western” performance in a repurposed WWII drill hall
+                    fusing <em>Redoubt</em> (2018) and <em>Secondary</em> (2023) to explore American violence through
+                    football and wilderness at Aspen Art Museum’s AIR 2025 festival.</p>
+
+                <p><strong>Preview the piece:</strong> <a
+                        href="https://www.theguardian.com/artanddesign/2025/jul/29/matthew-barney-artist-tactical-parallax"
+                        target="_blank">Matthew Barney: ‘I’m not interested in participating in consensus culture’ (The
+                        Guardian)</a></p>
+
+
+
+                <h2 id="new">3. <em>Andy Goldsworthy: Fifty Years</em> at the RSA, Edinburgh</h2>
+
+                <p>Over 200 works by the British land-artist, stone cairns, ice sculptures, sheepskin staircases,
+                    barbed-wire installations, reframe minimalism as nature’s geometry in the Royal Scottish Academy’s
+                    largest indoor survey ever.</p>
+
+                <p><strong>Exhibition details:</strong> <a
+                        href="https://www.nationalgalleries.org/exhibition/andy-goldsworthy-fifty-years"
+                        target="_blank">Andy Goldsworthy: Fifty Years (National Galleries of Scotland)</a></p>
+
+
+                <h2 id="new">4. AI Art’s “Builders” vs. “Breakers”</h2>
+
+                <p>Peter Bauman’s essay in <em>The Art Newspaper</em> unpacks whether AI artists are constructive
+                    pioneers forging new aesthetics or disruptive forces upending authorship, ultimately showing they’re
+                    often both.</p>
+
+                <p><strong>Full essay:</strong> <a
+                        href="https://www.theartnewspaper.com/2025/07/11/why-artificial-intelligence-artists-can-be-seen-as-builders-breakersor-both-at-once"
+                        target="_blank">Why artificial intelligence artists can be seen as ‘builders’, ‘breakers’ or
+                        both at once (The Art Newspaper)</a></p>
+
+
+
+                <h2 id="new">5. Museum of AI Art: <em>Dataland</em> (LA, late 2025)</h2>
+
+                <p>Co-founded by Refik Anadol, Dataland will be the first museum dedicated entirely to AI art, 20,000 sq
+                    ft of data driven “paintings” and “sculptures” under one roof next to MOCA and The Broad.</p>
+
+                <p><strong>Learn more:</strong> <a
+                        href="https://www.theguardian.com/us-news/2024/sep/25/ai-art-museum-los-angeles-dataland"
+                        target="_blank">World’s first AI art museum to explore ‘creative potential of machines’ in LA
+                        (The Guardian)</a></p>
+
+
             </div>
 
             <div class="Cont">
-                <h2><b>The Artist Said What?</b></h2>
+                <h2 id="news"><b>The Artist Said What?</b></h2>
                 <div class="para">
                     <div class="scroll">
                         <p><i>"Creativity is allowing yourself to make mistakes, Art is knowing which ones to keep."
@@ -283,23 +391,28 @@
     <section>
 
         <div class="Containy">
+
+
+            <div class="Conto">
+                <img src="BgIvatar.png" alt="VYX" width="250px" height="500px">
+            </div>
             <div class="Conty">
                 <h2 id="Contact"><b>Contact Us</b></h2>
-                <p>Instagram</p>
-                <p>Twitter</p>
+                <p>Instagram: <br><br><a href="https://www.instagram.com/">VYX IG</a></p>
+                <p>Twitter: <br><br><a href="https://x.com/vyx_art">VYX X</a></p>
                 <p>Whatsapp</p>
                 <br>
                 <br>
                 <p class="form"><a href="Form.html">Let's chat</a></p>
             </div>
-            <div class="Conty">
+            <div class="Conte">
                 <h2 id="Faq"><b>FAQ</b></h2>
-                <p><b>Q:</b> What sizes of potraits do you sell?</p>
-                <p><b>A:</b>All sizes are available.</p>
-                <p><b>Q:</b>Do you sell only portraits?</p>
-                <p><b>A:</b>We sell portraits, merch, and do freestyling.</p>
-                <p><b>Q:</b>Do you sell customized portraits?</p>
-                <p><b>A:</b>Yes we do.</p>
+                <p><b>Q:</b> What sizes of portraits do you sell?</p>
+                <p><b>A: </b>All sizes are available.</p>
+                <p><b>Q: </b>Do you sell only portraits?</p>
+                <p><b>A: </b>We sell portraits, merch, and do freestyling.</p>
+                <p><b>Q: </b>Do you sell customized portraits?</p>
+                <p><b>A: </b>Yes we do.</p>
             </div>
 
 
