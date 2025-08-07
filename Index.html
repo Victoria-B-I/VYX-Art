@@ -3,18 +3,30 @@
 
 <head>
     <title>VYX Art</title>
+
+    <!--Styling for the index page-->
     <style>
         body {
             background-color: black;
             color: white;
         }
 
-        h2 {
+        h1 {
+            font-size: xx-large;
             color: darkgoldenrod;
             text-shadow: 0 0 5px darkgoldenrod;
-            font-size: x-large;
+            text-align: center;
         }
 
+        .Abtvyx {
+            margin-top: 0;
+            word-spacing: 5px;
+            letter-spacing: 4px;
+            font-size: 50px;
+        }
+
+
+        .header {}
 
         #Bg-video {
             position: absolute;
@@ -26,9 +38,11 @@
             z-index: -1;
         }
 
+
+
         nav {
             position: relative;
-            margin-bottom: 500px;
+            margin-bottom: 300px;
         }
 
         .Navbar {
@@ -61,19 +75,6 @@
             color: white;
         }
 
-        h1 {
-            font-size: xx-large;
-            color: darkgoldenrod;
-            text-shadow: 0 0 5px darkgoldenrod;
-            text-align: center;
-        }
-
-        .Abtvyx {
-            margin-top: 0;
-            word-spacing: 5px;
-            letter-spacing: 4px;
-            font-size: 50px;
-        }
 
         .Abt {
             margin-top: 300px;
@@ -82,16 +83,34 @@
         }
 
 
+        h2 {
+            color: darkgoldenrod;
+            text-shadow: 0 0 5px darkgoldenrod;
+            font-size: x-large;
+        }
+
+
+        #About {
+            text-align: center;
+            font-size: 50px;
+        }
+
+
+
         .abouty {
             text-align: center;
             font-family: roboto;
             font-size: x-large;
         }
 
-        #About {
+
+
+        #Wealth {
             text-align: center;
-            font-size: 50px;
         }
+
+
+
 
         iframe {
             border: 10px solid white;
@@ -99,25 +118,33 @@
             width: 400px;
         }
 
+        #buto {
+            border: 1.5px solid white;
+            background-color: black;
+            color: aliceblue;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 15px;
+            font-size: larger;
+            -ms-text-size-adjust: ;
+        }
+
+
         a :hover {
             background-color: gold;
         }
 
+
         .Container {
             display: flex;
             gap: 100px;
-            margin-top: 30px;
-            margin-bottom: 400px;
+            margin-top: 300px;
+            margin-bottom: 10px;
             margin-left: 100px;
             margin-right: 100px;
             word-spacing: 5px;
         }
 
-        .Cont {
-            flex-direction: column;
-            justify-content: center;
-            background-color: black;
-        }
 
         #news {
             text-align: left;
@@ -130,12 +157,25 @@
         }
 
 
+
+        .Cont {
+            flex-direction: column;
+            justify-content: center;
+            background-color: black;
+        }
+
+        .para {}
+
+        .scroll {}
+
+
+
         .Containy {
             display: flex;
             gap: 50px;
             margin-left: 100px;
             margin-right: 100px;
-            margin-bottom: 300px;
+            margin-bottom: 100px;
             word-spacing: 5px;
             font-size: large;
         }
@@ -159,6 +199,14 @@
             font-size: 20px;
         }
 
+
+        #Contact {
+            font-size: 40px;
+        }
+
+        .form {}
+
+
         .Conte {
             flex-direction: column;
             justify-content: center;
@@ -168,13 +216,8 @@
 
         }
 
-        #Contact
-        {
-            font-size: 40px;
-        }
 
-        #Faq
-        {
+        #Faq {
             font-size: 40px;
         }
 
@@ -182,18 +225,6 @@
 
         .Feedback {
             text-align: center;
-        }
-
-        #Text {
-            width: 300px;
-        }
-
-
-        footer {
-            text-align: center;
-            color: darkgoldenrod;
-            margin-top: 50px;
-            margin-bottom: 50px;
         }
 
 
@@ -205,33 +236,39 @@
 
         }
 
-        #buto {
-            border: 1.5px solid white;
-            background-color: black;
-            color: aliceblue;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            padding: 15px;
-            font-size: larger;
-            -ms-text-size-adjust: ;
-        }
-
-
-        #Wealth {
-            text-align: center;
-        }
 
         .form :hover {
             padding: 3px;
             background-color: black;
             color: goldenrod;
         }
+
+
+
+        #Text {
+            width: 300px;
+        }
+
+
+
+
+
+
+        footer {
+            text-align: center;
+            color: darkgoldenrod;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
     </style>
 
 </head>
 
 <body>
+    <!--The header containing the logo, background video, nav, learn more button,
+     the page title fixed on the background video-->
     <header>
+        <!--Header contains a h1 class, a div class, a nav class, and an unordered list class.-->
         <h1 class="Abtvyx"><b>VYX ART</b></h1>
 
         <div class="header">
@@ -243,6 +280,8 @@
         </div>
 
         <nav class="Navbar">
+            <!--The nav contains the navbar and nav links styled with the flex display property,
+            the logo-->
             <img src="" alt="">
             <ul class="Navlinks">
                 <li><a href="#Home">Home</a></li>
@@ -261,9 +300,8 @@
 
     </header>
 
-    <!-- <section> -->
-    <!-- </section> -->
     <section class="Abt">
+        <!--This section contains the About of the Index page, an Id, and a class-->
         <h2 id="About"><b>About</b></h2>
         <p class="abouty">Art is more than just art, it’s a bold fusion of vision, imagination, and style. We bring
             colors to life<br>
@@ -290,6 +328,8 @@
         </p>
     </section>
     <section id="Wealth">
+        <!--This section contains the iframe of the index page. Two Id's, and an anchor
+        link that takes you to the source of the video-->
         <h2>VYX&Wealth Brand</h2>
         <br>
         <!-- <iframe src="iframe.mp4.MP4" title="Shop Here"> -->
@@ -300,6 +340,9 @@
     <br>
     <br>
     <section>
+        <!--This section contains two div's. The parent div and the child div, which would be styled 
+        by the flex property. It has two Id's, a hyperlink that takes you to the source of the information and 
+        a target. It also has an em unit used in inline styling-->
         <div class="Container">
 
             <div class=" Cont">
@@ -367,6 +410,7 @@
             </div>
 
             <div class="Cont">
+                <!--This section has 3 div's, still in the same section, and an Id.-->
                 <h2 id="news"><b>The Artist Said What?</b></h2>
                 <div class="para">
                     <div class="scroll">
@@ -391,6 +435,7 @@
     <section>
 
         <div class="Containy">
+            <!--This section has 4 div's, an image which is the background avatar, and an Id-->
 
 
             <div class="Conto">
@@ -420,6 +465,7 @@
 
 
     </section>
+    <!--This section has a single class for feedback, and three Id's-->
     <section class="Feedback">
         <h2>Feedback</h2>
         <p>What has been your experience?</p>
@@ -450,6 +496,7 @@
 
         <p>Is there anything you'd like us to add?</p>
         <form>
+            <!--There a submit button, an anchor, two Id's and a placeholder for submit.-->
             <label for="Feedback"></label>
             <textarea id="Text"></textarea><br>
             <a><button id="Butto" aria-placeholder="Submit">
@@ -463,6 +510,7 @@
     <br>
     <hr>
     <footer>
+        <!--Contains the footer and socialmedia icons-->
         &copy; VYX 2025
     </footer>
 </body>
