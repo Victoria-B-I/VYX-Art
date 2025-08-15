@@ -19,24 +19,37 @@
         }
 
         .Abtvyx {
-            margin-top: 0;
+            margin-top: 5px;
             word-spacing: 5px;
             letter-spacing: 4px;
-            font-size: 50px;
+            font-size: calc(7.0vw);
         }
 
 
-        .header {}
+        .header {
+            margin-bottom: 200px;
+        }
 
         #Bg-video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100vw;
-            height: 1200px;
+            height: 800px;
+            object-fit: cover;
+            /* z-index: -1; */
+        }
+
+        /* #Bg-video2
+        {
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 800px;
             object-fit: cover;
             z-index: -1;
-        }
+
+        } */
 
 
 
@@ -54,7 +67,7 @@
         .Navlinks {
             display: flex;
             flex-direction: row;
-            justify-content: right;
+            justify-content: center;
             gap: 50px;
             list-style-type: none;
             font-size: large;
@@ -79,7 +92,26 @@
         .Abt {
             margin-top: 300px;
             margin-bottom: 500px;
-            font-size: x-large;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .Abt video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .Abt .Abt1{
+            position: relative;
+            z-index: 1;
+            color: whitesmoke;
+
         }
 
 
@@ -92,14 +124,16 @@
 
         #About {
             text-align: center;
+            margin-top: 20px;
             font-size: 50px;
+            font-family: monospace;
         }
 
 
 
         .abouty {
             text-align: center;
-            font-family: roboto;
+            font-family: monospace;
             font-size: x-large;
         }
 
@@ -158,8 +192,7 @@
         }
 
 
-        .Art
-        {
+        .Art {
             font-size: 20px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
@@ -175,8 +208,7 @@
         .scroll {}
 
 
-        .Art2
-        {
+        .Art2 {
             font-size: 20px;
         }
 
@@ -300,7 +332,7 @@
         <div class="header">
 
             <video autoplay muted loop id="Bg-video">
-                <source src="Bgvid1.mp4.mp4" type="video/mp4">
+                <source src="Freepik2.mp4" type="video/mp4">
             </video>
 
         </div>
@@ -331,7 +363,12 @@
     </header>
 
     <section class="Abt">
+        <video autoplay muted loop id="Bg-video2">
+            <source src="Freepik5.mp4" type="video/mp4">
+        </video>
+
         <!--This section contains the About of the Index page, an Id, and a class-->
+        <div class="Abt1">
         <h2 id="About"><b>About</b></h2>
         <p class="abouty">Art is more than just art, it’s a bold fusion of vision, imagination, and style. We bring
             colors to life<br>
@@ -356,14 +393,28 @@
             <b>Let’s turn your vision into a masterpiece, one that looks as good as it feels.</b>
 
         </p>
+        </div>
     </section>
     <section id="Wealth">
         <!--This section contains the iframe of the index page. Two Id's, and an anchor
         link that takes you to the source of the video-->
         <h2>VYX&Wealth Brand</h2>
         <br>
-        <!-- <iframe src="iframe.mp4.MP4" title="Shop Here"> -->
+        <iframe src="iframe.mp4.MP4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen; title="Shop Here" 
+            controls id="Iframe1">
         </iframe>
+        <button class="Play-Btn" id="Play-PauseBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,0.6)"/>
+                <polygon points="40,30 70,50 40,70" fill="white"/>
+            </svg>
+        </button>
+        <script>
+            let player;
+            // Load Youtube API script
+            const tag = document.createElement ('script');
+            tag.src = "iframe.mp4.MP4";
+        </script>
         <p><b>Shop Here</b></p>
         <a href="https://www.instagram.com/wealths.brand"><button id="buto">Download</button></a>
     </section>
@@ -379,7 +430,8 @@
                 <h1 id="news">NEWS & UPDATES</h1>
                 <h2 id="new">1. Wallpaper as Collectible Art</h2>
 
-                <p class="Art">Artist-designed wallpaper is exploding as immersive, limited edition art objects, hand-painted and
+                <p class="Art">Artist-designed wallpaper is exploding as immersive, limited edition art objects,
+                    hand-painted and
                     silkscreened installations by Laura Owens, Dominique Fung, Kerstin Brätsch, Kiriakos Tompolidis,
                     Philip Wiegard, and more at Matthew Marks Gallery and Brooklyn’s Independent Art Fair.</p>
 
@@ -392,7 +444,8 @@
 
                 <h2 id="new">2. Matthew Barney’s <em>TACTICAL parallax</em> at AIR Aspen</h2>
 
-                <p class="Art">Provocateur Matthew Barney premieres a live “western” performance in a repurposed WWII drill hall
+                <p class="Art">Provocateur Matthew Barney premieres a live “western” performance in a repurposed WWII
+                    drill hall
                     fusing <em>Redoubt</em> (2018) and <em>Secondary</em> (2023) to explore American violence through
                     football and wilderness at Aspen Art Museum’s AIR 2025 festival.</p>
 
@@ -406,7 +459,8 @@
 
                 <h2 id="new">3. <em>Andy Goldsworthy: Fifty Years</em> at the RSA, Edinburgh</h2>
 
-                <p class="Art">Over 200 works by the British land-artist, stone cairns, ice sculptures, sheepskin staircases,
+                <p class="Art">Over 200 works by the British land-artist, stone cairns, ice sculptures, sheepskin
+                    staircases,
                     barbed-wire installations, reframe minimalism as nature’s geometry in the Royal Scottish Academy’s
                     largest indoor survey ever.</p>
 
@@ -419,7 +473,8 @@
 
                 <h2 id="new">4. AI Art’s “Builders” vs. “Breakers”</h2>
 
-                <p class="Art">Peter Bauman’s essay in <em>The Art Newspaper</em> unpacks whether AI artists are constructive
+                <p class="Art">Peter Bauman’s essay in <em>The Art Newspaper</em> unpacks whether AI artists are
+                    constructive
                     pioneers forging new aesthetics or disruptive forces upending authorship, ultimately showing they’re
                     often both.</p>
 
@@ -433,7 +488,8 @@
                 <br>
                 <h2 id="new">5. Museum of AI Art: <em>Dataland</em> (LA, late 2025)</h2>
 
-                <p class="Art">Co-founded by Refik Anadol, Dataland will be the first museum dedicated entirely to AI art, 20,000 sq
+                <p class="Art">Co-founded by Refik Anadol, Dataland will be the first museum dedicated entirely to AI
+                    art, 20,000 sq
                     ft of data driven “paintings” and “sculptures” under one roof next to MOCA and The Broad.</p>
 
                 <p class="Art"><strong>Read more:</strong> <a
@@ -455,18 +511,24 @@
                 <h2 id="news"><b>The Artist Said What?</b></h2>
                 <div class="para">
                     <div class="scroll">
-                        <p class="Art2"><i>"Creativity is allowing yourself to make mistakes, Art is knowing which ones to keep."
+                        <p class="Art2"><i>"Creativity is allowing yourself to make mistakes, Art is knowing which ones
+                                to keep."
                                 -<b>Paul
                                     Keele</b></i></p>
                         <p class="Art2"><i>"You can't use up creativity, the more you use, the more you have." -<b>Maya
                                     Angelou</b></i></p>
-                        <p class="Art2"><i>"The aim of the art is to represent not the outward appearance of things, but their inward
+                        <p class="Art2"><i>"The aim of the art is to represent not the outward appearance of things, but
+                                their inward
                                 significance." -<b>Aristotle</b></i></p>
-                        <p class="Art2"><i>"Digital design is like painting, except the paint never dries." -<b>Neville Brody</b></i>
+                        <p class="Art2"><i>"Digital design is like painting, except the paint never dries." -<b>Neville
+                                    Brody</b></i>
                         </p>
-                        <p class="Art2"><i>"Art is not what you see, but what you make others see." -<b>Edgar Degas</b></i></p>
-                        <p class="Art2"><i>"The world of reality has its limit, the world of imagination is boundless." </i></p>
-                        <p class="Art2"><i>"Love Art in yourself, and not yourself in art." -<b>Konstantin Stanislavski</b></i></p>
+                        <p class="Art2"><i>"Art is not what you see, but what you make others see." -<b>Edgar
+                                    Degas</b></i></p>
+                        <p class="Art2"><i>"The world of reality has its limit, the world of imagination is boundless."
+                            </i></p>
+                        <p class="Art2"><i>"Love Art in yourself, and not yourself in art." -<b>Konstantin
+                                    Stanislavski</b></i></p>
                     </div>
                 </div>
     </section>
