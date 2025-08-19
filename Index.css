@@ -94,6 +94,9 @@ a :hover {
     color: gold;
 }
 
+
+
+
 .Shop {
     text-align: center;
 }
@@ -310,12 +313,14 @@ footer {
     width: 100%;
     height: calc(var(--baseline) * var (--h, 24));
     filter: grayscale(100%) contrast(1.1);
-animation: spin 40s linear infinite;
+    animation: spin 40s linear infinite;
     transform: rotateY('180deg')
 }
 
 @keyframes spin {
-    100% {transform: rotate(360deg);}
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -335,8 +340,7 @@ animation: spin 40s linear infinite;
 
 
 
-.Illusion
-{
+.Illusion {
     width: 500px;
     height: 500px;
     overflow: hidden;
@@ -434,4 +438,48 @@ animation: spin 40s linear infinite;
 
 .navy {
     background-color: gray;
+}
+
+
+
+:root {
+    --font-size-heading: 2.5rem;
+    --font-size-body: 1rem;
+    --spacing: 16px;
+}
+
+h1 {
+    font-size: var(--font-size-heading);
+}
+
+p {
+    font-size: var(--font-size-body);
+    margin-bottom: var(--spacing);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    :root {
+        --font-size-heading: 2rem;
+        --font-size-body: 0.9rem;
+        --spacing: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --font-size-heading: 1.5rem;
+        --font-size-body: 0.8rem;
+        --spacing: 10px;
+    }
+
+}
+
+    @media (max-width: 300px) {
+    :root {
+        --font-size-heading: 1.2rem;
+        --font-size-body: 0.6rem;
+        --spacing: 8px;
+    }
+
 }

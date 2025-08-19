@@ -37,19 +37,51 @@
             width: 100vw;
             height: 800px;
             object-fit: cover;
-            /* z-index: -1; */
         }
 
-        /* #Bg-video2
-        {
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 800px;
-            object-fit: cover;
-            z-index: -1;
+        #videoPlayer {
+            border: 5px solid white;
+        }
 
+        .Overlay {
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            right: 25%;
+            transform: translate(-50% -50%);
+            color: white;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .Overlay p {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* .Overlay1 {
+            position: relative;
+            top: 50%;
+            left: 25%;
+            right: 25%;
+            padding-top: 120px;
+            color: white;
+            text-align: center;
+            z-index: 2;
+            
         } */
+
+
+        #Bg-video2 {
+            opacity: 10;
+        }
 
 
 
@@ -60,6 +92,7 @@
 
         .Navbar {
             margin-right: 50px;
+            z-index: 1000;
 
         }
 
@@ -91,12 +124,13 @@
 
         .Abt {
             margin-top: 300px;
-            margin-bottom: 500px;
+            margin-bottom: 100px;
             position: relative;
             width: 100%;
             height: 100vh;
             overflow: hidden;
         }
+
 
         .Abt video {
             position: absolute;
@@ -107,7 +141,7 @@
             object-fit: cover;
         }
 
-        .Abt .Abt1{
+        .Abt .Abt1 {
             position: relative;
             z-index: 1;
             color: whitesmoke;
@@ -115,17 +149,31 @@
         }
 
 
+        .Abt3 {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 50px;
+            margin-bottom: 300px;
+        }
+
+
+        .Abt5 {
+            margin-top: 50px;
+        }
+
+
         h2 {
             color: darkgoldenrod;
             text-shadow: 0 0 5px darkgoldenrod;
             font-size: x-large;
+            margin-top: auto;
         }
 
 
         #About {
             text-align: center;
             margin-top: 20px;
-            font-size: 50px;
+            font-size: calc(5.0vw);
             font-family: monospace;
         }
 
@@ -135,22 +183,56 @@
             text-align: center;
             font-family: monospace;
             font-size: x-large;
+            color: #fff;
+            text-shadow: 0 0 10px rgba (255, 255, 255, 0.8);
         }
 
 
 
-        #Wealth {
+        .Wealth {
             text-align: center;
+            margin-top: 300px;
+            margin-bottom: 100px;
         }
 
+        #Vyx {
+            font-size: calc(4.0vw);
+        }
+
+        /* #Iframe1 {
+            position: relative;
+            display: inline-block;
+        } */
+
+        /* #Iframe1 iframe {
+            display: block;
+        } */
+
+        /* .PlayBtn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .PlayBtn :hover circle {
+            fill: rgba(0, 0, 0, 0.8);
+        } */
 
 
 
-        iframe {
+
+
+        /* iframe  {
             border: 10px solid white;
             height: 300px;
-            width: 400px;
-        }
+            width: 500px;
+            
+        } */
 
         #buto {
             border: 1.5px solid white;
@@ -184,6 +266,7 @@
             color: darkgoldenrod;
             font-size: 50px;
             background-color: whitesmoke;
+            width: 500px;
         }
 
         #new {
@@ -193,8 +276,9 @@
 
 
         .Art {
-            font-size: 20px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 21px;
+            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+            font-family: 'Cinzel Decorative', cursive;
         }
 
 
@@ -214,13 +298,20 @@
 
 
 
+        .Abt4 {
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+
+
+
         .Containy {
             display: flex;
-            gap: 50px;
+            gap: 80px;
             margin-left: 100px;
             margin-right: 100px;
             margin-top: 150px;
-            margin-bottom: 150px;
+            margin-bottom: 0.5%;
             word-spacing: 5px;
             font-size: large;
         }
@@ -244,9 +335,26 @@
             font-size: 20px;
         }
 
+        #Socialhover2
+        {
+            font-size: large;
+        }
+
 
         #Contact {
             font-size: 40px;
+            margin-top: 100px;
+        }
+
+
+        #Socialhover 
+        {
+            font-size: 25px;
+        }
+
+
+        #Socialhover a:hover{
+            background-color: gold;
         }
 
         .Wapp {
@@ -266,26 +374,56 @@
         }
 
 
-        .Conte {
-            flex-direction: column;
+        .Faq {
+            display: flex;
+            flex-direction: row;
             justify-content: center;
-            margin-left: 100px;
-            margin-right: 100px;
-            font-size: 20px;
 
         }
 
 
-        #Faq {
-            font-size: 40px;
+        .Conte {
+
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 20px;
+            width: 200px;
+            border: 20px solid white;
+            color: white;
+            padding: 150px;
+            margin-top: 0;
+
+        }
+
+
+        #Faqq {
+            font-size: 50px;
+            margin-top: 0;
+            text-align: center;
         }
 
 
 
         .Feedback {
             text-align: center;
+            margin-top: 1%;
+            font-size: 20px;
         }
 
+        #Socialhover1
+        {
+            font-size: 30px;
+            font-style: italic;
+        }
+
+
+        #Butto
+        {
+            font-size: large;
+            padding: 20px;
+        }
 
         form a :hover {
             color: whitesmoke;
@@ -295,6 +433,17 @@
 
         }
 
+
+        .Wapp {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            right: 50px;
+            position: fixed;
+            bottom: 20px;
+            z-index: 1000;
+        }
 
         .Wapp :hover {
             padding: 3px;
@@ -310,14 +459,45 @@
 
 
 
-
-
-
         footer {
             text-align: center;
             color: darkgoldenrod;
             margin-top: 50px;
             margin-bottom: 50px;
+        }
+
+
+
+        :root {
+            --font-size-heading: 2.5rem;
+            --font-size-body: 1rem;
+            --spacing: 16px;
+        }
+
+        h1 {
+            font-size: var(--font-size-heading);
+        }
+
+        p {
+            font-size: var(--font-size-body);
+            margin-bottom: var(--spacing);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            :root {
+                --font-size-heading: 2rem;
+                --font-size-body: 0.9rem;
+                --spacing: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            :root {
+                --font-size-heading: 1.5rem;
+                --font-size-body: 0.8rem;
+                --spacing: 10px;
+            }
         }
     </style>
 
@@ -334,7 +514,17 @@
             <video autoplay muted loop id="Bg-video">
                 <source src="Freepik2.mp4" type="video/mp4">
             </video>
+            <div class="Overlay">
+                <p style="font-size: 30px;"><i>Visio. Ymaginatio. Xylographia</i></p>
+                <br>
+            </div>
 
+            <!-- <div class="Overlay1">
+                <h1>VYX Art. Explore our Art collections</h1>
+                <p style="font-size: 20px;"><i>Vision Imagination Craftsmanship</i></p>
+
+            </div>
+ -->
         </div>
 
         <nav class="Navbar">
@@ -348,13 +538,13 @@
             <ul class="Navlinks">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
-                <li><a href="#Wealth">Wealth Brand</a></li>
+                <li><a href="#videoPlayer">Wealth Brand</a></li>
                 <li><a href="Gallery.html">Gallery</a></li>
                 <!-- <li><a href="AnimeGalaxy.html">Anime Galaxy</a></li> -->
                 <li><a href="Merch.Html">Merch</a></li>
                 <li><a href="Blog.html">Blog</a></li>
                 <li><a href="#Contact">Contact</a></li>
-                <li><a href="#Faq">Faq</a></li>
+                <li><a href="#Faqq">Faq</a></li>
             </ul>
 
         </nav>
@@ -366,61 +556,126 @@
         <video autoplay muted loop id="Bg-video2">
             <source src="Freepik5.mp4" type="video/mp4">
         </video>
-
         <!--This section contains the About of the Index page, an Id, and a class-->
         <div class="Abt1">
-        <h2 id="About"><b>About</b></h2>
-        <p class="abouty">Art is more than just art, it’s a bold fusion of vision, imagination, and style. We bring
-            colors to life<br>
-            through vibrant, expressive creations that speak to the soul and stand out from the ordinary.
-            From digital<br> and photo portraits to custom merch and style focused visuals, every piece we make is
-            primarly designed<br>
-            to celebrate personality, culture, and creativity. Whether you want to wear it, frame it, or share it,
-            VYX<br>
-            turns your ideas into unforgettable visuals that feel personal and powerful.<br>
-            <br>
-            Born from a love for all things bold and beautiful, VYX is where your ideas meet our artistic fire. We<br>
-            collaborate with individuals, brands, and creatives who crave art that’s fresh, fearless, and full of
-            flair.<br>
-            From sleek logos and posters to splashy paint style designs, everything we create is made to tell
-            stories,<br>
-            spark emotions, and leave a lasting impression.<br>
-            <br>
+            <h2 id="About"><b>About</b></h2>
+            <p class="abouty">Art is more than just art, it’s a bold fusion of vision, imagination, and style. We bring
+                colors to life<br>
+                through vibrant, expressive creations that speak to the soul and stand out from the ordinary.
+                From digital<br> and photo portraits to custom merch and style focused visuals, every piece we make is
+                primarly designed<br>
+                to celebrate personality, culture, and creativity. Whether you want to wear it, frame it, or share it,
+                VYX<br>
+                turns your ideas into unforgettable visuals that feel personal and powerful.<br>
+                <br>
+                Born from a love for all things bold and beautiful, VYX is where your ideas meet our artistic fire.
+                We<br>
+                collaborate with individuals, brands, and creatives who crave art that’s fresh, fearless, and full of
+                flair.<br>
+                From sleek logos and posters to splashy paint style designs, everything we create is made to tell
+                stories,<br>
+                spark emotions, and leave a lasting impression.<br>
+                <br>
 
-            <b>At VYX, we don’t just sell art — we create style with soul and experiences you can feel.</b><br>
-            <br>
+                <b>At VYX, we don’t just sell art — we create style with soul and experiences you can feel.</b><br>
+                <br>
 
-            <b>Let’s turn your vision into a masterpiece, one that looks as good as it feels.</b>
+                <b>Let’s turn your vision into a masterpiece, one that looks as good as it feels.</b>
 
-        </p>
+            </p>
         </div>
     </section>
-    <section id="Wealth">
+    <section class="Wealth">
         <!--This section contains the iframe of the index page. Two Id's, and an anchor
         link that takes you to the source of the video-->
-        <h2>VYX&Wealth Brand</h2>
+        <h2 id="Vyx">VYX & Wealth Brand</h2>
         <br>
-        <iframe src="iframe.mp4.MP4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen; title="Shop Here" 
-            controls id="Iframe1">
-        </iframe>
-        <button class="Play-Btn" id="Play-PauseBtn">
+        <!-- <iframe src="iframe.mp4.MP4" frameborder="0" allow="encrypted-media" loading="lazy" allowfullscreen; title="Shop Here" controls
+            id="Iframe1">
+        </iframe> -->
+        <!-- <button class="PlayBtn" id="PlayPauseBtn">
             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,0.6)"/>
-                <polygon points="40,30 70,50 40,70" fill="white"/>
+                <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,0.6)" />
+                <polygon points="40,30 70,50 40,70" fill="white" />
             </svg>
-        </button>
-        <script>
+        </button> -->
+        <!-- <script>
             let player;
             // Load Youtube API script
-            const tag = document.createElement ('script');
-            tag.src = "iframe.mp4.MP4";
+            const tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            document.head.appendChild(tag);
+
+            // Create player once API is ready (this function must be global)
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('Iframe', {
+                    height: '360', // adjust as needed
+                    width: '640',  //adjust as needed
+                    videoId: 'Iframe1', // <-- replace with Iframe1
+                    playerVars: {
+                        controls: 1,
+                        rel: 0,
+                        modestbranding: 1,
+                        autoplay: 0 // <- ensure this is 0
+                    },
+                    events: {
+                        onReady: onPlayerReady,
+                        onStateChange: onPlayerStateChange
+                    }
+                });
+            }
+
+            // Play Pause button logic (defensive: only attach if element exists)
+            const PlayPauseBtn = document.getElementById('PlayPauseBtn');
+            if (PlayPauseBtn) {
+                PlayPauseBtn.addEventListener('click', function () {
+                    if (player && typeof player.getPlayerState === 'function') {
+                        // YT.PlayerState.Playing === 1
+                        if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+                            player.pauseVideo();
+                        } else {
+                            player.playVideo();
+                        }
+                    }
+                });
+            }
+        </script> -->
+
+
+        <video id="videoPlayer" width="640" height="360" muted controls>
+            <source src="iframe.mp4.MP4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <button class="PlayBtn" id="PlayPauseBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,0.6)" />
+                <polygon points="40,30 70,50 40,70" fill="white" />
+            </svg>
+        </button>
+
+        <script>
+            const video = document.getElementById('videoPlayer');
+            const btn = document.getElementById('PlayPauseBtn');
+
+            btn.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play().catch(error => {
+                        console.error('Playback failed:', error);
+                    });
+                } else {
+                    video.pause();
+                }
+            });
         </script>
+
         <p><b>Shop Here</b></p>
         <a href="https://www.instagram.com/wealths.brand"><button id="buto">Download</button></a>
     </section>
     <br>
     <br>
-    <section>
+
+    <section class="Abt3">
         <!--This section contains two div's. The parent div and the child div, which would be styled 
         by the flex property. It has two Id's, a hyperlink that takes you to the source of the information and 
         a target. It also has an em unit used in inline styling-->
@@ -503,7 +758,7 @@
     </section>
 
 
-    <section>
+    <section class="Abt3">
         <div class="Quote">
 
             <div class="Quotted">
@@ -538,17 +793,19 @@
     <section>
         <div class="Faq">
             <div class="Conte">
-                <h2 id="Faq"><b>FAQ</b></h2>
-                <p><b>Q:</b> What sizes of portraits do you sell?</p>
-                <p><b>A: </b>All sizes are available.</p>
-                <p><b>Q: </b>Do you sell only portraits?</p>
-                <p><b>A: </b>We sell portraits, merch, and do freestyling.</p>
-                <p><b>Q: </b>Do you sell customized portraits?</p>
-                <p><b>A: </b>Yes we do.</p>
+                <h2 id="Faqq"><b>FAQ</b></h2>
+                <p id="Socialhover2"><b>Q:</b> What sizes of portraits do you sell?</p>
+                <p id="Socialhover2"><b>A: </b>All sizes are available.</p>
+                <p id="Socialhover2"><b>Q: </b>Do you sell only portraits?</p>
+                <p id="Socialhover2"><b>A: </b>We sell portraits, merch, and do freestyling.</p>
+                <p id="Socialhover2"><b>Q: </b>Do you sell customized portraits?</p>
+                <p id="Socialhover2"><b>A: </b>Yes we do.</p>
             </div>
+        </div>
 
     </section>
-    <section>
+
+    <section class="Abt4">
 
         <div class="Containy">
             <!--This section has 4 div's, an image which is the background avatar, and an Id-->
@@ -560,26 +817,19 @@
 
             <div class="Conty">
                 <h2 id="Contact"><b>Contact Us</b></h2>
-                <p>Instagram: <br><br><a href="https://www.instagram.com/">VYX IG</a></p>
-                <p>Twitter: <br><br><a href="https://x.com/vyx_art">VYX X</a></p>
-                <p>Whatsapp</p>
-                <br>
-                <br>
+                <p id="Socialhover"><a href="https://www.instagram.com/">Instagram</a></p>
+                <p id="Socialhover"><a href="https://x.com/vyx_art">Twitter</a></p>
+                <p id="Socialhover"><a href="https://wa.me/+2349131211336" target="_parent">Whatsapp</a></p>
+
             </div>
 
-
-            <div class="Wapp">
-
-                <p><a href="https://wa.me/+2349131211336" target="_parent">Let's chat</a></p>
-            </div>
         </div>
-
-
     </section>
+
     <!--This section has a single class for feedback, and three Id's-->
     <section class="Feedback">
-        <h2>Feedback</h2>
-        <p>What has been your experience?</p>
+        <h2 id="Faqq">Feedback</h2>
+        <p id="Socialhover1">What has been your experience?</p>
         <input type="checkbox" id="Check">
         <label for="Excellent">Excellent</label>
         <input type="checkbox" id="Check">
@@ -592,7 +842,7 @@
         <label for="Poor">Poor</label>
 
 
-        <p> Rate this page</p>
+        <p id="Socialhover1">Rate this page</p>
         <input type="checkbox" id="Check">
         <label for="Excellent">Excellent</label>
         <input type="checkbox" id="Check">
@@ -605,7 +855,7 @@
         <label for="Poor">Poor</label>
 
 
-        <p>Is there anything you'd like us to add?</p>
+        <p id="Socialhover1">Is there anything you'd like us to add?</p>
         <form>
             <!--There a submit button, an anchor, two Id's and a placeholder for submit.-->
             <label for="Feedback"></label>
@@ -617,6 +867,15 @@
 
 
     </section>
+
+
+    <section class="Abt5">
+        <div class="Wapp">
+            <p><a href="https://wa.me/+2349131211336" target="_parent">Let's chat</a></p>
+        </div>
+
+    </section>
+
 
     <br>
     <hr>
