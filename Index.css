@@ -431,14 +431,86 @@ footer {
 
 
 /* Blog */
+
+
+
+.Navbay {
+    margin-right: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.Navbay a {
+    background-color: transparent;
+    color: white;
+}
+
+
+
+
+.Navlinky {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 40px;
+    list-style-type: none;
+    font-size: 20px;
+    background-image: url("/GAL1.jpg");
+    /* max-width: 100%; */
+    height: 1700px;
+    background-size: cover;
+    background-color: transparent;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+
+
+
 .Blog {
+    display: inline-block;
     text-align: center;
-    font-size: 30px;
+    font-size: calc(8.5vw);
+    /* flex: 1; */
+    margin: 0;
+    text-shadow: 0 0 5px #ff9800, 0 0 10px #ff9800, 0 0 20px #ff9800;
+    /* z-index: 2; */
+    transform-origin: center center;
+    animation: swing 2s infimite ease-in-out;
+
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+
 }
 
 .navy {
     background-color: gray;
 }
+
+
+
 
 
 
@@ -475,7 +547,7 @@ p {
 
 }
 
-    @media (max-width: 300px) {
+@media (max-width: 300px) {
     :root {
         --font-size-heading: 1.2rem;
         --font-size-body: 0.6rem;
