@@ -3,9 +3,17 @@
 
 <head>
     <title>VYX Art</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
     <!--Styling for the index page-->
     <style>
+        /* * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        } */
+
         body {
             background-color: black;
             color: white;
@@ -234,6 +242,10 @@
             
         } */
 
+        #Shop {
+            font-size: 15px;
+        }
+
         #buto {
             border: 1.5px solid white;
             background-color: black;
@@ -241,7 +253,7 @@
             margin-top: 5px;
             margin-bottom: 5px;
             padding: 15px;
-            font-size: larger;
+            font-size: 20px;
         }
 
 
@@ -335,9 +347,28 @@
             font-size: 20px;
         }
 
-        #Socialhover2
-        {
-            font-size: large;
+
+
+        .Conty a {
+            color: gold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            /* space between icon and text */
+            transition: color 0.3s;
+
+
+        }
+
+
+        .Conty {
+            color: #f39c12;
+            /* hover color */
+        }
+
+        #Socialhover2 {
+            font-size: 20px;
         }
 
 
@@ -347,13 +378,12 @@
         }
 
 
-        #Socialhover 
-        {
+        #Socialhover {
             font-size: 25px;
         }
 
 
-        #Socialhover a:hover{
+        #Socialhover a:hover {
             background-color: gold;
         }
 
@@ -412,15 +442,13 @@
             font-size: 20px;
         }
 
-        #Socialhover1
-        {
+        #Socialhover1 {
             font-size: 30px;
             font-style: italic;
         }
 
 
-        #Butto
-        {
+        #Butto {
             font-size: large;
             padding: 20px;
         }
@@ -464,6 +492,7 @@
             color: darkgoldenrod;
             margin-top: 50px;
             margin-bottom: 50px;
+            font-size: 20px;
         }
 
 
@@ -476,6 +505,7 @@
 
         h1 {
             font-size: var(--font-size-heading);
+            background-color: var(--background-color);
         }
 
         p {
@@ -489,6 +519,7 @@
                 --font-size-heading: 2rem;
                 --font-size-body: 0.9rem;
                 --spacing: 12px;
+                --background-color: #fff;
             }
         }
 
@@ -669,7 +700,7 @@
             });
         </script>
 
-        <p><b>Shop Here</b></p>
+        <p id="Shop"><b>Shop Here</b></p>
         <a href="https://www.instagram.com/wealths.brand"><button id="buto">Download</button></a>
     </section>
     <br>
@@ -690,9 +721,10 @@
                     silkscreened installations by Laura Owens, Dominique Fung, Kerstin Brätsch, Kiriakos Tompolidis,
                     Philip Wiegard, and more at Matthew Marks Gallery and Brooklyn’s Independent Art Fair.</p>
 
-                <p class="Art"><strong>Read more:</strong> <a
+                <p class="Art"><a
                         href="https://www.townandcountrymag.com/style/home-decor/a65488335/artist-wallpaper-trend-2025/"
-                        target="_blank">Is Wallpaper the Art World’s Next Big Thing? (Town &amp; Country)</a></p>
+                        target="_parent">Is Wallpaper the Art World’s Next Big Thing?<br><strong>Read more:</strong>
+                        (Town &amp; Country)</a></p>
                 <br>
                 <br>
 
@@ -704,24 +736,24 @@
                     fusing <em>Redoubt</em> (2018) and <em>Secondary</em> (2023) to explore American violence through
                     football and wilderness at Aspen Art Museum’s AIR 2025 festival.</p>
 
-                <p class="Art"><strong>Read more:</strong> <a
+                <p class="Art"><a
                         href="https://www.theguardian.com/artanddesign/2025/jul/29/matthew-barney-artist-tactical-parallax"
-                        target="_blank">Matthew Barney: ‘I’m not interested in participating in consensus culture’ (The
-                        Guardian)</a></p>
+                        target="_parent">Matthew Barney: ‘I’m not interested in participating in consensus culture’ (The
+                        Guardian) <br><strong>Read more:</strong></a></p>
                 <br>
                 <br>
 
 
                 <h2 id="new">3. <em>Andy Goldsworthy: Fifty Years</em> at the RSA, Edinburgh</h2>
 
-                <p class="Art">Over 200 works by the British land-artist, stone cairns, ice sculptures, sheepskin
+                <!-- <p class="Art">Over 200 works by the British land-artist, stone cairns, ice sculptures, sheepskin
                     staircases,
                     barbed-wire installations, reframe minimalism as nature’s geometry in the Royal Scottish Academy’s
                     largest indoor survey ever.</p>
 
-                <p class="Art"><strong>Read more:</strong> <a
-                        href="https://www.nationalgalleries.org/exhibition/andy-goldsworthy-fifty-years"
-                        target="_blank">Andy Goldsworthy: Fifty Years (National Galleries of Scotland)</a></p>
+                <p class="Art"><a href="https://www.nationalgalleries.org/exhibition/andy-goldsworthy-fifty-years"
+                        target="_parent">Andy Goldsworthy: Fifty Years (National Galleries of Scotland) <br><strong>Read
+                            more:</strong> </a></p>
 
                 <br>
                 <br>
@@ -733,10 +765,10 @@
                     pioneers forging new aesthetics or disruptive forces upending authorship, ultimately showing they’re
                     often both.</p>
 
-                <p class="Art"><strong>Read more:</strong> <a
+                <p class="Art"><a
                         href="https://www.theartnewspaper.com/2025/07/11/why-artificial-intelligence-artists-can-be-seen-as-builders-breakersor-both-at-once"
-                        target="_blank">Why artificial intelligence artists can be seen as ‘builders’, ‘breakers’ or
-                        both at once (The Art Newspaper)</a></p>
+                        target="_parent">Why artificial intelligence artists can be seen as ‘builders’, ‘breakers’ or
+                        both at once (The Art Newspaper) <br><strong>Read more:</strong></a></p>
 
 
                 <br>
@@ -747,46 +779,95 @@
                     art, 20,000 sq
                     ft of data driven “paintings” and “sculptures” under one roof next to MOCA and The Broad.</p>
 
-                <p class="Art"><strong>Read more:</strong> <a
+                <p class="Art"><a
                         href="https://www.theguardian.com/us-news/2024/sep/25/ai-art-museum-los-angeles-dataland"
-                        target="_blank">World’s first AI art museum to explore ‘creative potential of machines’ in LA
-                        (The Guardian)</a></p>
+                        target="_parent">World’s first AI art museum to explore ‘creative potential of machines’ in LA
+                        (The Guardian) <br><strong>Read more:</strong> </a></p>
 
-
+ -->
             </div>
         </div>
     </section>
 
 
     <section class="Abt3">
-        <div class="Quote">
+        <!-- <div class="Quote"> -->
 
-            <div class="Quotted">
-                <!--This section has 3 div's, still in the same section, and an Id.-->
-                <h2 id="news"><b>The Artist Said What?</b></h2>
-                <div class="para">
-                    <div class="scroll">
-                        <p class="Art2"><i>"Creativity is allowing yourself to make mistakes, Art is knowing which ones
-                                to keep."
-                                -<b>Paul
-                                    Keele</b></i></p>
-                        <p class="Art2"><i>"You can't use up creativity, the more you use, the more you have." -<b>Maya
-                                    Angelou</b></i></p>
-                        <p class="Art2"><i>"The aim of the art is to represent not the outward appearance of things, but
-                                their inward
-                                significance." -<b>Aristotle</b></i></p>
-                        <p class="Art2"><i>"Digital design is like painting, except the paint never dries." -<b>Neville
-                                    Brody</b></i>
-                        </p>
-                        <p class="Art2"><i>"Art is not what you see, but what you make others see." -<b>Edgar
-                                    Degas</b></i></p>
-                        <p class="Art2"><i>"The world of reality has its limit, the world of imagination is boundless."
-                            </i></p>
-                        <p class="Art2"><i>"Love Art in yourself, and not yourself in art." -<b>Konstantin
-                                    Stanislavski</b></i></p>
-                    </div>
-                </div>
+        <!-- <div class="Quotted"> -->
+        <!--This section has 3 div's, still in the same section, and an Id.-->
+        <h2 id="news"><b>The Artist Said What?</b></h2>
+        <div class="para">
+            <div id="scroll">
+                <p class="Art2"><i>"Creativity is allowing yourself to make mistakes, Art is knowing which ones
+                        to keep."
+                        -<b>Paul
+                            Keele</b></i></p>
+            </div>
+        </div>
     </section>
+
+    <!-- <script>
+                    const el = document.getElementById("scroll");
+                    const fullText = el.innerText; // get the original text
+                    el.innerText = ""; // clear before typing
+                    let i = 0;
+                    function typeWriter() {
+                        if (i < fullText.length) {
+                            el.innerText += fullText.charAt(i);
+                            i++;
+                            setTimeout(typeWriter, 50); // typing speed (ms per chapter)
+                        }
+                    }
+                    // Start typing
+                    typeWriter
+                </script> -->
+
+
+    <script>
+        // Your quotes
+        const quotes = [
+            `<p class="Art2"><i>"You can't use up creativity, the more you use, the more you have." - <b>Maya Angelou</b></i></p>`,
+            `<p class="Art2"><i>"The aim of art is to represent not the outward appearance of things, but their inward significance." - <b>Aristotle</b></i></p>`,
+            `<p class="Art2"><i>"Digital design is like painting, except the paint never dries." - <b>Neville Brody</b></i></p>`,
+            `<p class="Art2"><i>"Art is not what you see, but what you make others see." - <b>Edgar Degas</b></i></p>`,
+            `<p class="Art2"><i>"The world of reality has its limit, the world of imagination is boundless."</i></p>`,
+            `<p class="Art2"><i>"Love Art in yourself, and not yourself in art." - <b>Konstantin Stanislavski</b></i></p>`
+
+        ];
+
+        const container = document.getElementById("scroll");
+
+        function typeWriter(text, i, callback) {
+            if (i < text.length) {
+                container.innerHTML = text.substring(0, i + 1); // keep HTML tags
+                setTimeout(() => typeWriter(text, i + 1, callback), 50);
+            } else if (callback) {
+                setTimeout(callback, 2000); // wait 2s before next quote
+            }
+        }
+
+        function showParagraph(index = 0) {
+            if (index < quotes.length) {
+                const fullHTML = quotes[index];
+                container.innerHTML = ""; // clear before typing
+                typeWriter(fullHTML, 0, () => showParagraph(index + 1));
+            } else {
+                // Loop back to the first one (remove this if you want it to stop)
+                setTimeout(() => showParagraph(0), 1000);
+            }
+        }
+
+        // Start
+        showParagraph();
+    </script>
+
+
+
+
+
+
+
+
 
 
 
@@ -817,9 +898,18 @@
 
             <div class="Conty">
                 <h2 id="Contact"><b>Contact Us</b></h2>
-                <p id="Socialhover"><a href="https://www.instagram.com/">Instagram</a></p>
-                <p id="Socialhover"><a href="https://x.com/vyx_art">Twitter</a></p>
-                <p id="Socialhover"><a href="https://wa.me/+2349131211336" target="_parent">Whatsapp</a></p>
+                <a href="https://www.instagram.com/sciartist0" target="_parent">
+                    <i class="fab fa-instagram"></i> <p id="Socialhover3">Instagram</p>
+                </a>
+                <a href="https://www.facebook.com/Toriah Bee" target="_parent">
+                    <i class="fab fa-facebook"></i><p>Facebook</p>
+                </a>
+                <a href="https://x.com/vyx_art" target="_parent">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="https://wa.me/+2349131211336" target="_parent">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
 
             </div>
 
