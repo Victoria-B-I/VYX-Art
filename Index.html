@@ -17,6 +17,7 @@
         body {
             background-color: black;
             color: white;
+            overflow-x: hidden;
         }
 
         h1 {
@@ -45,10 +46,12 @@
             width: 100vw;
             height: 800px;
             object-fit: cover;
+            opacity: 10;
         }
 
         #videoPlayer {
             border: 5px solid white;
+            margin-left: 100px;
         }
 
         .Overlay {
@@ -74,17 +77,6 @@
             }
         }
 
-        /* .Overlay1 {
-            position: relative;
-            top: 50%;
-            left: 25%;
-            right: 25%;
-            padding-top: 120px;
-            color: white;
-            text-align: center;
-            z-index: 2;
-            
-        } */
 
 
         #Bg-video2 {
@@ -101,6 +93,7 @@
         .Navbar {
             margin-right: 50px;
             z-index: 1000;
+            position: sticky;
 
         }
 
@@ -112,7 +105,6 @@
             gap: 50px;
             list-style-type: none;
             font-size: large;
-
         }
 
         nav a:hover {
@@ -166,7 +158,7 @@
 
         .Abt33
         {
-            margin-left: 100px;
+            margin-left: 200px;
             margin-right: 100px;
             margin-top: 50px;
             margin-bottom: 300px;
@@ -212,7 +204,7 @@
             position: relative;
             display: inline-block;
             margin-left: 250px;
-            margin-right: 400px;
+            margin-right: 200px;
         }
 
         .Wealth video {
@@ -224,7 +216,7 @@
         .PlayBtn{
             position: absolute;
             top: 60%;
-            left: 40%;
+            left: 49%;
             transform: translate(-50% -50%);
             font-size: 30px;
             color: black;
@@ -240,41 +232,6 @@
             font-size: calc(4.0vw);
         }
 
-        /* #Iframe1 {
-            position: relative;
-            display: inline-block;
-        } */
-
-        /* #Iframe1 iframe {
-            display: block;
-        } */
-
-        /* .PlayBtn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-        }
-
-        .PlayBtn :hover circle {
-            fill: rgba(0, 0, 0, 0.8);
-        } */
-
-
-
-
-
-        /* iframe  {
-            border: 10px solid white;
-            height: 300px;
-            width: 500px;
-            
-        } */
-
         #Shop {
             font-size: 15px;
         }
@@ -285,6 +242,8 @@
             color: aliceblue;
             margin-top: 5px;
             margin-bottom: 5px;
+            margin-right: 5px;
+            margin-left: 80px;
             padding: 15px;
             font-size: 20px;
         }
@@ -533,6 +492,10 @@
         #Letschat
         {
             font-size: 20px;
+            color: darkgoldenrod;
+            border: 2px solid white;
+            border-radius: 120px;
+            padding: 10px;
             
         }
 
@@ -564,6 +527,12 @@
         #Socialfooter4
         {
             color: #25D366;
+        }
+
+
+        html
+        {
+            overflow-x: hidden;
         }
 
 
@@ -737,7 +706,7 @@
     // When video is paused
     video.addEventListener('pause', () => {
         // Change button back to "Play"
-        btn.textContent = 'Play';
+        //btn.textContent = 'Play';
 
         // Show the button again
         btn.style.display = 'inline-block';
@@ -985,7 +954,7 @@
 
     <section class="Abt5">
         <div class="Wapp">
-            <p><a href="https://wa.me/+2349131211336" target="_parent" id="Letschat">Let's chat</a></p>
+            <p><a href="https://wa.me/+2349131211336" target="_parent" id="Letschat">Consult Artist</a></p>
         </div>
 
     </section>

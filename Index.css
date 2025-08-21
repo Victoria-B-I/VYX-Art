@@ -120,7 +120,7 @@ footer {
 
 
 #Gallery {
-    font-size: 50px;
+    font-size: calc(5.5vw);
 }
 
 #Gallery2 {
@@ -356,6 +356,34 @@ footer {
 
 
 
+        .Wapp {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            right: 50px;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 200px;
+            position: fixed;
+            background-color: black;
+            bottom: 20px;
+            z-index: 1000;
+        }
+
+        .Wapp :hover {
+            padding: 10px;
+            background-color: black;
+            color: goldenrod;
+        }
+
+        .Wapp a{
+            background-color: black;
+        }
+
+
+
+
 
 
 
@@ -380,7 +408,7 @@ footer {
     justify-content: center;
     gap: 50px;
     list-style-type: none;
-    font-size: 25px;
+    font-size: 20px;
     background-color: transparent;
     margin-top: 0;
     margin-right: 0;
@@ -421,6 +449,36 @@ footer {
     overflow: hidden;
     object-fit: contain;
 }
+
+.parag
+{
+    font-family: sans-serif;
+    word-spacing: 2px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+#form2
+{
+    text-align: center;
+    border: 2px solid white;
+    color: black;
+    padding: 10px;
+    align-items: center;
+    font-size: 25px;
+}
+
+#form2 a {
+    background-color: white;
+    color: black;
+}
+
+
+#form2 a:hover{
+    background-color: darkgoldenrod;
+}
+    
+
 
 
 
@@ -469,19 +527,31 @@ footer {
 
 
 .Blog {
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
     font-size: calc(8.5vw);
     /* flex: 1; */
     margin: 0;
     text-shadow: 0 0 5px #ff9800, 0 0 10px #ff9800, 0 0 20px #ff9800;
-    /* z-index: 2; */
-    transform-origin: center center;
-    animation: swing 2s infimite ease-in-out;
-
+    animation: blink-animation 1s steps (1, start) infinite;
 }
 
-@keyframes swing {
+    @keyframes blink-animation {
+        0%, 50%, 100%, {
+            opacity: 1;
+        }
+
+        25%, 75% {
+            opacity: 0;
+        }
+    }
+    /* z-index: 2; */
+    /* transform-origin: center center; */
+    /* animation: swing 2s infimite ease-in-out; */
+
+
+
+/* @keyframes swing {
     0% {
         transform: rotate(0deg);
     }
@@ -503,7 +573,7 @@ footer {
     }
 
 
-}
+} */
 
 .navy {
     background-color: gray;
@@ -512,6 +582,8 @@ footer {
 
 
 
+html
+{overflow-x: hidden;}
 
 
 :root {
