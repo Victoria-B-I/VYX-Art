@@ -88,7 +88,7 @@
 
 
         #Bg-video2 {
-            opacity: 10;
+            opacity: 0.2;
         }
 
 
@@ -158,6 +158,14 @@
 
 
         .Abt3 {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 50px;
+            margin-bottom: 300px;
+        }
+
+        .Abt33
+        {
             margin-left: 100px;
             margin-right: 100px;
             margin-top: 50px;
@@ -272,7 +280,7 @@
         }
 
         #buto {
-            border: 1.5px solid white;
+            border: 3px solid white;
             background-color: black;
             color: aliceblue;
             margin-top: 5px;
@@ -330,7 +338,7 @@
 
 
         .Art2 {
-            font-size: 20px;
+            font-size: 25px;
         }
 
 
@@ -404,6 +412,13 @@
 
         #Socialhover3 {
             color: whitesmoke;
+            
+        }
+
+        a:hover p#Socialhover3{
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.1;
         }
 
 
@@ -472,8 +487,8 @@
         }
 
         #Socialhover1 {
-            font-size: 30px;
-            font-style: italic;
+            font-size: 25px;
+            font-family: monospace;
         }
 
 
@@ -676,57 +691,6 @@
         link that takes you to the source of the video-->
         <h2 id="Vyx">VYX & Wealth Brand</h2>
         <br>
-        <!-- <iframe src="iframe.mp4.MP4" frameborder="0" allow="encrypted-media" loading="lazy" allowfullscreen; title="Shop Here" controls
-            id="Iframe1">
-        </iframe> -->
-        <!-- <button class="PlayBtn" id="PlayPauseBtn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="48" fill="rgba(0,0,0,0.6)" />
-                <polygon points="40,30 70,50 40,70" fill="white" />
-            </svg>
-        </button> -->
-        <!-- <script>
-            let player;
-            // Load Youtube API script
-            const tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-            document.head.appendChild(tag);
-
-            // Create player once API is ready (this function must be global)
-            function onYouTubeIframeAPIReady() {
-                player = new YT.Player('Iframe', {
-                    height: '360', // adjust as needed
-                    width: '640',  //adjust as needed
-                    videoId: 'Iframe1', // <-- replace with Iframe1
-                    playerVars: {
-                        controls: 1,
-                        rel: 0,
-                        modestbranding: 1,
-                        autoplay: 0 // <- ensure this is 0
-                    },
-                    events: {
-                        onReady: onPlayerReady,
-                        onStateChange: onPlayerStateChange
-                    }
-                });
-            }
-
-            // Play Pause button logic (defensive: only attach if element exists)
-            const PlayPauseBtn = document.getElementById('PlayPauseBtn');
-            if (PlayPauseBtn) {
-                PlayPauseBtn.addEventListener('click', function () {
-                    if (player && typeof player.getPlayerState === 'function') {
-                        // YT.PlayerState.Playing === 1
-                        if (player.getPlayerState() === YT.PlayerState.PLAYING) {
-                            player.pauseVideo();
-                        } else {
-                            player.playVideo();
-                        }
-                    }
-                });
-            }
-        </script> -->
-
 
         <video id="videoPlayer" width="640" height="360" muted controls>
             <source src="iframe.mp4.MP4" type="video/mp4">
@@ -740,23 +704,51 @@
             </svg>
         </button>
 
-        <script>
-            const video = document.getElementById('videoPlayer');
-            const btn = document.getElementById('PlayPauseBtn');
+ <script>
+    const video = document.getElementById('videoPlayer');
+    const btn = document.getElementById('PlayPauseBtn');
 
-            btn.addEventListener('click', () => {
-                if (video.paused) {
-                    video.play().catch(error => {
-                        console.error('Playback failed:', error);
-                    });
-                } else {
-                    video.pause();
-                }
+    let hideTimeout;
+
+    btn.addEventListener('click', () => {
+        if (video.paused) {
+            video.play().catch(error => {
+                console.error('Playback failed:', error);
             });
-        </script>
+        } else {
+            video.pause();
+        }
+    });
 
-        <p id="Shop"><b>Shop Here</b></p>
-        <a href="https://www.instagram.com/wealths.brand"><button id="buto">Download</button></a>
+    // When video starts playing
+    video.addEventListener('play', () => {
+        // Change button to "Pause"
+        // btn.textContent = 'Pause';
+
+        // Clear any existing timeout
+        clearTimeout(hideTimeout);
+
+        // Set timeout to hide the button after 2 seconds (adjust as needed)
+        hideTimeout = setTimeout(() => {
+            btn.style.display = 'none';
+        }, 1000);
+    });
+
+    // When video is paused
+    video.addEventListener('pause', () => {
+        // Change button back to "Play"
+        btn.textContent = 'Play';
+
+        // Show the button again
+        btn.style.display = 'inline-block';
+
+        // Clear any hiding timeout just in case
+        clearTimeout(hideTimeout);
+    });
+</script>
+
+        <!-- <p id="Shop"><b>Shop Here</b></p> -->
+        <a href="https://www.instagram.com/wealths.brand"><button id="buto"><b>Shop Here</b></button></a>
     </section>
     <br>
     <br>
@@ -801,7 +793,7 @@
 
                 <h2 id="new">3. <em>Andy Goldsworthy: Fifty Years</em> at the RSA, Edinburgh</h2>
 
-                <!-- <p class="Art">Over 200 works by the British land-artist, stone cairns, ice sculptures, sheepskin
+                <p class="Art">Over 200 works by the British land-artist, stone cairns, ice sculptures, sheepskin
                     staircases,
                     barbed-wire installations, reframe minimalism as nature’s geometry in the Royal Scottish Academy’s
                     largest indoor survey ever.</p>
@@ -839,13 +831,13 @@
                         target="_parent">World’s first AI art museum to explore ‘creative potential of machines’ in LA
                         (The Guardian) <br><strong>Read more:</strong> </a></p>
 
- -->
+
             </div>
         </div>
     </section>
 
 
-    <section class="Abt3">
+    <section class="Abt33">
         <!-- <div class="Quote"> -->
 
         <!-- <div class="Quotted"> -->
@@ -860,23 +852,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <script>
-                    const el = document.getElementById("scroll");
-                    const fullText = el.innerText; // get the original text
-                    el.innerText = ""; // clear before typing
-                    let i = 0;
-                    function typeWriter() {
-                        if (i < fullText.length) {
-                            el.innerText += fullText.charAt(i);
-                            i++;
-                            setTimeout(typeWriter, 50); // typing speed (ms per chapter)
-                        }
-                    }
-                    // Start typing
-                    typeWriter
-                </script> -->
-
 
     <script>
         // Your quotes
@@ -897,7 +872,7 @@
                 container.innerHTML = text.substring(0, i + 1); // keep HTML tags
                 setTimeout(() => typeWriter(text, i + 1, callback), 50);
             } else if (callback) {
-                setTimeout(callback, 2000); // wait 2s before next quote
+                setTimeout(callback, 5000); // wait 5s before next quote
             }
         }
 
@@ -915,16 +890,6 @@
         // Start
         showParagraph();
     </script>
-
-
-
-
-
-
-
-
-
-
 
     <section>
         <div class="Faq">
