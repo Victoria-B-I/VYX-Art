@@ -438,32 +438,32 @@
             display: inline-block;
         }
 
-        dropdown-btn {
+        .dropdown-btn {
             padding: 10px;
             border: 1px solid #ccc;
             background-color: #f9f9f9;
             cursor: pointer;
         }
 
-        dropdown-content {
+        .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #fff;
+            background-color: black;
             border: 1px solid #ccc;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
 
-        dropdown-content label {
+        .dropdown-content label {
             display: block;
             padding: 8px;
         }
 
-        dropdown-content label:hover {
+        .dropdown-content label:hover {
             background-color: #f1f1f1;
         }
 
-        dropdown:hover .dropdown-content {
+        .dropdown:hover .dropdown-content {
             display: block;
         }
 
@@ -850,7 +850,6 @@
     <!--This section has a single class for feedback, and three Id's-->
     <section class="Feedbac">
         <h2 id="Faqq">Feedback</h2>
-        <p class="Socialhover1">What has been your experience?
             <!-- <select>
            <option>
             <input type="checkbox" id="Check">
@@ -872,7 +871,8 @@
  -->
 
         <div class="dropdown">
-            <button class="dropdown-btn">Select Options</button>
+            <p class="Socialhover1">How was your experience on the page?
+            <button class="dropdown-btn">Select Option</button></p>
             <div class="dropdown-content">
                 <label><input type="checkbox" value="Option 1"> Excellent</label>
                 <label><input type="checkbox" value="Option 2"> Good</label>
@@ -881,7 +881,19 @@
 
             </div>
         </div>
-        </p>
+<br>
+                <div class="dropdown">
+            <p class="Socialhover1">Rate this page
+            <button class="dropdown-btn">Select Option</button></p>
+            <div class="dropdown-content">
+                <label><input type="checkbox" value="Option 1"> Excellent</label>
+                <label><input type="checkbox" value="Option 2"> Good</label>
+                <label><input type="checkbox" value="Option 3"> Fair</label>
+                <label><input type="checkbox" value="Option 3"> Poor</label>
+
+            </div>
+        </div>
+
         <script>
             document.querySelectorAll('.dropdown input[type="checkbox"]').forEach(checkbox => {
                 checkbox.addEventListener('change', () => {
@@ -893,19 +905,6 @@
                 });
             });
         </script>
-
-        <p class="Socialhover1">Rate this page:
-            <input type="checkbox" id="Check">
-            <label for="Excellent">Excellent</label>
-            <input type="checkbox" id="Check">
-            <label for="Good">Good</label>
-            <input type="checkbox" id="Check">
-            <label for="Medium">Medium</label>
-            <input type="checkbox" id="Check">
-            <label for="Bad">Bad</label>
-            <input type="checkbox" id="Check">
-            <label for="Poor">Poor</label>
-        </p>
 
 
         <p class="Socialhover1">Is there anything you'd like us to add? <textarea id="Text"></textarea></p>
