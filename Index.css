@@ -82,11 +82,11 @@ img:hover {
 }
 
 
-a {
+/* a {
     text-decoration-line: none;
     background-color: black;
     color: gold;
-}
+} */
 
 a :hover {
     padding: 20px;
@@ -114,6 +114,27 @@ footer {
     margin-bottom: 50px;
 }
 
+.FooterSocial {
+    margin-top: 60px;
+    margin-bottom: 0;
+    gap: 2px;
+}
+
+#Socialfooter1 {
+    color: #E4405F;
+}
+
+#Socialfooter2 {
+    color: #1877F2;
+}
+
+#Socialfooter4 {
+    color: #25D366;
+}
+
+
+
+
 
 /* Gallery */
 
@@ -129,6 +150,48 @@ footer {
     text-align: center;
     margin: 10px;
 }
+
+
+
+.dropdownn {
+    position: relative;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.dropdownncontent {
+    display: none;
+    position: absolute;
+    background-color: #ff9800;
+    padding: 10px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdownn:hover .dropdownncontent {
+    display: block;
+}
+
+.dropdownncontent a {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.spa {
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    /* background-color: #333; */
+    /* optional background */
+    padding: 10px;
+    /* margin-left: 600px; */
+    font-size: calc(3vw);
+}
+
 
 
 #Scroll2 {
@@ -164,7 +227,7 @@ footer {
     gap: 50px;
     list-style-type: none;
     font-size: 20px;
-    background-image: url("/Gallery8.jpg");
+    background-image: url("/Gallery/Gallery8.jpg");
     max-width: 100%;
     height: 900px;
     background-size: cover;
@@ -356,30 +419,31 @@ footer {
 
 
 
-        .Wapp {
-            text-align: right;
-            display: flex;
-            flex-direction: column;
-            justify-content: right;
-            right: 50px;
-            font-size: 20px;
-            padding: 10px;
-            border-radius: 200px;
-            position: fixed;
-            background-color: black;
-            bottom: 20px;
-            z-index: 1000;
-        }
+.Wapp {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    right: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 200px;
+    position: fixed;
+    background-color: black;
+    bottom: 20px;
+    z-index: 1000;
+}
 
-        .Wapp :hover {
-            padding: 10px;
-            background-color: black;
-            color: goldenrod;
-        }
+.Wapp :hover {
+    padding: 10px;
+    background-color: black;
+    color: goldenrod;
+}
 
-        .Wapp a{
-            background-color: black;
-        }
+.Wapp a {
+    background-color: black;
+}
+
 
 
 
@@ -450,16 +514,14 @@ footer {
     object-fit: contain;
 }
 
-.parag
-{
+.parag {
     font-family: sans-serif;
     word-spacing: 2px;
     line-height: 25px;
     font-size: 20px;
 }
 
-#form2
-{
+#form2 {
     text-align: center;
     border: 2px solid white;
     color: black;
@@ -474,10 +536,9 @@ footer {
 }
 
 
-#form2 a:hover{
+#form2 a:hover {
     background-color: darkgoldenrod;
 }
-    
 
 
 
@@ -488,102 +549,15 @@ footer {
 
 
 
-/* Blog */
 
 
 
-.Navbay {
-    margin-right: 0;
-    margin-top: 30px;
-    margin-bottom: 10px;
+
+
+/* Root Styling */
+html {
+    overflow-x: hidden;
 }
-
-.Navbay a {
-    background-color: transparent;
-    color: white;
-}
-
-
-
-
-.Navlinky {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
-    padding: 0 40px;
-    list-style-type: none;
-    font-size: 20px;
-    background-image: url("/GAL1.jpg");
-    /* max-width: 100%; */
-    height: 1700px;
-    background-size: cover;
-    background-color: transparent;
-    margin-top: 0;
-    margin-right: 0;
-}
-
-
-
-
-.Blog {
-    /* display: inline-block; */
-    text-align: center;
-    font-size: calc(8.5vw);
-    /* flex: 1; */
-    margin: 0;
-    text-shadow: 0 0 5px #ff9800, 0 0 10px #ff9800, 0 0 20px #ff9800;
-    animation: blink-animation 1s steps (1, start) infinite;
-}
-
-    @keyframes blink-animation {
-        0%, 50%, 100%, {
-            opacity: 1;
-        }
-
-        25%, 75% {
-            opacity: 0;
-        }
-    }
-    /* z-index: 2; */
-    /* transform-origin: center center; */
-    /* animation: swing 2s infimite ease-in-out; */
-
-
-
-/* @keyframes swing {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    25% {
-        transform: rotate(-15deg);
-    }
-
-    50% {
-        transform: rotate(0deg);
-    }
-
-    75% {
-        transform: rotate(15deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-
-
-} */
-
-.navy {
-    background-color: gray;
-}
-
-
-
-
-html
-{overflow-x: hidden;}
 
 
 :root {

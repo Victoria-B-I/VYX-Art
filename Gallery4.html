@@ -20,7 +20,7 @@
             the logo-->
             <h1 id="Gallery2">Gallery</h1>
             <!-- <h3 class="dropdownn">Collection</h3> -->
-             
+
             <div class="dropdownn">
                 <span class="spa">Collection</span>
                 <div class="dropdownncontent">
@@ -28,9 +28,7 @@
                     <p class="hr"><a href="Gallery3.html" target="_self">B&W Photos</a></p>
                     <p class="hr"><a href="Gallery4.html" target="_self">Illusion Photos</a></p>
                 </div>
-                </div>
-            
-
+            </div>
 
             <ul class="Navlinkd">
                 <li><a href="Index.html">Home</a></li>
@@ -46,99 +44,55 @@
         </nav>
     </header>
 
-    <section class="abtpng">
-        <h1 id="Gallery">Collage</h1>
-        <p id="Pgal">Welcome to the fun side of creativity! This gallery is packed with colorful moments, unique art,
-            and snapshots that tell their own little stories. Whether you’re here to be inspired, smile, or just
-            explore, there’s something special in every image. Dive in and enjoy the vibe!</p>
-        <div class="Gally">
-            <figure class="gal">
-                <img src="DG Photos/DG1.jpg" alt="Image1">
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
-
-            <figure class="gal">
-                <img src="DG Photos/DG3.jpg" alt="Image2">
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
 
 
-
-            <figure class="gal">
-                <img src="DG Photos/DG2.jpg" alt="Image3" width=>
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
-
-
-            <figure class="gal">
-                <img src="DG Photos/DG5.jpg" alt="Image4">
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
-
-
-            <figure class="gal">
-                <img src="DG Photos/DG10.jpg" alt="Image5">
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
-
-
-            <figure class="gal">
-                <img src="DG Photos/DG6.jpg" alt="Image6">
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
-
-
-
-            <figure class="gal">
-                <img src="DG Photos/DG7.jpg" alt="Image7">
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
-
-
-
-            <figure class="gal">
-                <img src="DG Photos/DG8.jpg" alt="Image8">
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
-
-
-
-            <figure class="gal">
-                <img src="DG Photos/DG9.jpg" alt="Image9">
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
-
-
-
-            <figure class="gal">
-                <img src="DG Photos/DG11.jpg" alt="Image10">
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
-
-
-
-            <figure class="gal">
-                <img src="DG Photos/DG4.jpg" alt="Image11">
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
-
-
-
-            <figure class="gal">
-                <img src="DG Photos/DG12.jpg" alt="Image12">
-                <figcaption><i>Beautiful</i></figcaption>
-            </figure>
-
-
-
+        <section class="Dbg3">
+        <h2 id="Gallery">Illusion</h2>
+        <div class="Illusion">
+            <img src="Illusion/Illusion30.jpg" alt="Illusion">
         </div>
+
+
+        <!--Js-->
+
+        <script>
+            const images = [
+                "Illusion/Illusion1.avif", "Illusion/Illusion2.avif", "Illusion/Illusion3.avif", "Illusion/Illusion4.avif", "Illusion/Illusion5.jpg", "Illusion/Illusion6.avif", "Illusion/Illusion7.avif", "Illusion/Illusion8.avif", "Illusion/Illusion9.avif", "Illusion/Illusion10.webp", "Ilusion/Illusion11.webp", "Illusion/Illusion12.avif", "Illusion/Illusion13.png",
+                "Illusion/Illusion14.jpg", "Illusion/Illusion15.jpg", "Illusion/Illusion16.jpg", "Illusion/Illusion17.jpg", "Illusion/Illusion18.jpg", "Illusion/Illusion19.jpg", "Illusion/Illusion20.jpg", "IllusionIllusion21.jpg", "Illusion/Illusion22.jpg", "Illusion/Illusion23.jpg", "Illusion/Illusion24.png", "Illusion/Illusion25.jpg", "Illusion/Illusion26.jpg",
+                "Illusion/Illusion27.jpg", "Illusion/Illusion28.jpg", "Illusion/Illusion29.jpg", "Illusion/Illusion30.jpg"
+
+            ];
+
+            let index = 0
+            const imgElement = document.querySelector('.Illusion img')
+            setInterval(() => {
+                index = (index + 1) % images.length; // go to next image, loop back to first
+                imgElement.style.opacity = 0; // fade out
+                setTimeout(() => {
+                    imgElement.src = images[index]; // change image
+                    imgElement.style.opacity = 1;     // fade in
+                }, 500);
+            }, 3000); // change every 1 second
+        </script>
+    </section>
+    <!-- <section>
+        <h2>Fantasy</h2>
+    </section> -->
+    <!-- <section>
+        <h2>Myth</h2>
+    </section> -->
+    <!-- <section>
+        <h2>Freestyle Photography</h2>
+    </section> -->
+
+    <section>
+        <button class="Wapp">
+            <a href="Form.html">Place Order</a></button>
+
+
     </section>
 
-    <!-- <section>
-        <h2>Abstract</h2>
-    </section> -->
-    
-    <footer>
+        <footer>
         <section id="footer">
             <!--Contains the footer and socialmedia icons-->
             &copy; VYX 2025
@@ -159,7 +113,7 @@
             </section>
     </footer>
     <!-- Script -->
-    <!-- <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
             const scrollToggle = document.getElementById('scrollToggle');
             const scrollTargets = Array.from(document.querySelectorAll('nav, section, footer'));
@@ -191,7 +145,7 @@
             window.addEventListener('scroll', updateArrow);
             window.addEventListener('load', updateArrow);
         });
-    </script> -->
+    </script>
 
 </body>
 

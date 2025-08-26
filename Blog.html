@@ -4,6 +4,235 @@
 <head>
     <title>Blog</title>
     <link rel="stylesheet" href="Index.css">
+
+    <style>
+        /* Blog */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-decoration-line: none;
+        }
+
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .blog-section,
+        .Abt3 {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .blog-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-card h2 {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .blog-card p {
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .Container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #news {
+            color: #222;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        #new {
+            font-size: 1.2em;
+            color: #444;
+            margin-top: 30px;
+        }
+
+        .Art {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+
+
+        .Navbay {
+            margin-right: 0;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .Navbay a {
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+        }
+
+
+
+
+        .Navlinky {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+            padding: 0 40px;
+            list-style-type: none;
+            font-size: 20px;
+            background-image: url("/Gallery/GAL1.jpg");
+            /* max-width: 100%; */
+            height: 1700px;
+            background-size: cover;
+            background-color: transparent;
+            margin-top: 0;
+            margin-right: 0;
+        }
+
+
+
+
+        .Blog {
+            /* display: inline-block; */
+            text-align: center;
+            font-size: calc(8.5vw);
+            /* flex: 1; */
+            margin: 0;
+            text-shadow: 0 0 5px #ff9800, 0 0 10px #ff9800, 0 0 20px #ff9800;
+            animation: blink-animation 1s steps (1, start) infinite;
+        }
+
+        @keyframes blink-animation {
+
+            0%,
+            50%,
+            100%,
+            {
+            opacity: 1;
+        }
+
+        25%,
+        75% {
+            opacity: 0;
+        }
+        }
+
+        /* z-index: 2; */
+        /* transform-origin: center center; */
+        /* animation: swing 2s infimite ease-in-out; */
+
+
+
+        /* @keyframes swing {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+
+} */
+
+        .navy {
+            background-color: gray;
+        }
+
+
+        .Abt3 {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 50px;
+            margin-bottom: 300px;
+        }
+
+        .Container {
+            display: flex;
+            gap: 100px;
+            margin-top: 150px;
+            margin-bottom: 150px;
+            margin-left: 100px;
+            margin-right: 100px;
+            word-spacing: 5px;
+        }
+
+
+        #news {
+            text-align: left;
+            color: darkgoldenrod;
+            font-size: 50px;
+            background-color: whitesmoke;
+            width: 500px;
+        }
+
+        #new {
+            color: gold;
+            font-size: 40px;
+        }
+
+
+        .Art {
+            font-size: 21px;
+            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+            font-family: 'Cinzel Decorative', cursive;
+        }
+
+
+        .Cont {
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,39 +261,159 @@
 
     </header>
 
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <h1>Blog</h1>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <h2>BTS</h2>
+                <p>From global superstardom to military enlistment, BTS continues to shape pop music and Korean
+                    soft power. Dive into solo projects, upcoming reunions, and how they’ve transformed the
+                    music industry.</p>
+            </div>
 
-    <section>
+            <div class="blog-card">
+                <h2>Anime Pop Culture</h2>
+                <p>From <em>Jujutsu Kaisen</em> to <em>One Piece</em> live actions, anime's influence on global
+                    fashion, cinema,
+                    and music is stronger than ever. Explore the cross-cultural impact of your favorite shows.
+                </p>
+            </div>
 
-        <!-- <img src="GAL1.jpg" alt="Blog Img"> -->
-        <section>
-            <h2>BTS</h2>
-        </section>
-        <section>
-            <h2>Anime Pop Culture</h2>
-        </section>
-        <section>
-            <h2>Recommendation</h2>
-        </section>
-        <section>
-            <h2>Shorts</h2>
-        </section>
-        <footer>
-            &copy; VYX 2025
-            <section class="FooterSocial">
-                <a href="https://www.instagram.com/sciartist0" target="_parent" id="Socialfooter1">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/Toriah Bee" target="_parent" id="Socialfooter2">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://x.com/vyx_art" target="_parent" id="Socialfooter3">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://wa.me/+2349131211336" target="_parent" id="Socialfooter4">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+            <div class="blog-card">
+                <h2>Recommendation</h2>
+                <p>Looking for what to watch, read, or stream next? Check out weekly curated picks for anime,
+                    K-pop albums,
+                    manga, and underrated gems that deserve your time.</p>
+            </div>
 
-        </footer>
+            <div class="blog-card">
+                <h2>Shorts</h2>
+                <p>Quick takes, fandom memes, and trending reels. A bite-sized space for pop culture commentary
+                    that’s short, sweet, and scrollable.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="Abt3">
+        <!--This section contains two div's. The parent div and the child div, which would be styled 
+        by the flex property. It has two Id's, a hyperlink that takes you to the source of the information and 
+        a target. It also has an em unit used in inline styling-->
+        <div class="Container">
+
+            <div class=" Cont">
+                <h1 id="news">NEWS & UPDATES</h1>
+                <h2 id="new">1. Wallpaper as Collectible Art</h2>
+
+                <p class="Art">Artist-designed wallpaper is exploding as immersive, limited edition art objects,
+                    hand-painted and
+                    silkscreened installations by Laura Owens, Dominique Fung, Kerstin Brätsch, Kiriakos
+                    Tompolidis,
+                    Philip Wiegard, and more at Matthew Marks Gallery and Brooklyn’s Independent Art Fair.</p>
+
+                <p class="Art"><a
+                        href="https://www.townandcountrymag.com/style/home-decor/a65488335/artist-wallpaper-trend-2025/"
+                        target="_parent">Is Wallpaper the Art World’s Next Big Thing?<br><strong>Read
+                            more:</strong>
+                        (Town &amp; Country)</a></p>
+                <br>
+                <br>
+
+
+                <h2 id="new">2. Matthew Barney’s <em>TACTICAL parallax</em> at AIR Aspen</h2>
+
+                <p class="Art">Provocateur Matthew Barney premieres a live “western” performance in a repurposed
+                    WWII
+                    drill hall
+                    fusing <em>Redoubt</em> (2018) and <em>Secondary</em> (2023) to explore American violence
+                    through
+                    football and wilderness at Aspen Art Museum’s AIR 2025 festival.</p>
+
+                <p class="Art"><a
+                        href="https://www.theguardian.com/artanddesign/2025/jul/29/matthew-barney-artist-tactical-parallax"
+                        target="_parent">Matthew Barney: ‘I’m not interested in participating in consensus
+                        culture’
+                        (The
+                        Guardian) <br><strong>Read more:</strong></a></p>
+                <br>
+                <br>
+
+
+                <h2 id="new">3. <em>Andy Goldsworthy: Fifty Years</em> at the RSA, Edinburgh</h2>
+
+                <p class="Art">Over 200 works by the British land-artist, stone cairns, ice sculptures,
+                    sheepskin
+                    staircases,
+                    barbed-wire installations, reframe minimalism as nature’s geometry in the Royal Scottish
+                    Academy’s
+                    largest indoor survey ever.</p>
+
+                <p class="Art"><a href="https://www.nationalgalleries.org/exhibition/andy-goldsworthy-fifty-years"
+                        target="_parent">Andy Goldsworthy: Fifty Years (National Galleries of Scotland)
+                        <br><strong>Read
+                            more:</strong> </a></p>
+
+                <br>
+                <br>
+
+                <h2 id="new">4. AI Art’s “Builders” vs. “Breakers”</h2>
+
+                <p class="Art">Peter Bauman’s essay in <em>The Art Newspaper</em> unpacks whether AI artists are
+                    constructive
+                    pioneers forging new aesthetics or disruptive forces upending authorship, ultimately showing
+                    they’re
+                    often both.</p>
+
+                <p class="Art"><a
+                        href="https://www.theartnewspaper.com/2025/07/11/why-artificial-intelligence-artists-can-be-seen-as-builders-breakersor-both-at-once"
+                        target="_parent">Why artificial intelligence artists can be seen as ‘builders’,
+                        ‘breakers’
+                        or
+                        both at once (The Art Newspaper) <br><strong>Read more:</strong></a></p>
+
+
+                <br>
+                <br>
+                <h2 id="new">5. Museum of AI Art: <em>Dataland</em> (LA, late 2025)</h2>
+
+                <p class="Art">Co-founded by Refik Anadol, Dataland will be the first museum dedicated entirely
+                    to
+                    AI
+                    art, 20,000 sq
+                    ft of data driven “paintings” and “sculptures” under one roof next to MOCA and The Broad.
+                </p>
+
+                <p class="Art"><a
+                        href="https://www.theguardian.com/us-news/2024/sep/25/ai-art-museum-los-angeles-dataland"
+                        target="_parent">World’s first AI art museum to explore ‘creative potential of machines’
+                        in
+                        LA
+                        (The Guardian) <br><strong>Read more:</strong> </a></p>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        &copy; VYX 2025
+        <section class="FooterSocial">
+            <a href="https://www.instagram.com/sciartist0" target="_parent" id="Socialfooter1">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/Toriah Bee" target="_parent" id="Socialfooter2">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://x.com/vyx_art" target="_parent" id="Socialfooter3">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://wa.me/+2349131211336" target="_parent" id="Socialfooter4">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+    </footer>
 </body>
 
 

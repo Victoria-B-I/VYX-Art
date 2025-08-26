@@ -15,7 +15,10 @@
         } */
 
         body {
-            background-color: black;
+            background-color:
+                rgba(0, 0, 0, 0.85);
+            opacity: 0.85;
+
             color: white;
             overflow-x: hidden;
         }
@@ -26,6 +29,23 @@
             text-shadow: 0 0 5px darkgoldenrod;
             text-align: center;
         }
+
+
+        .scroll-toggle {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            background: #000;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            text-decoration: none;
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
 
         .Abtvyx {
             margin-top: 5px;
@@ -149,15 +169,8 @@
         }
 
 
-        .Abt3 {
-            margin-left: 100px;
-            margin-right: 100px;
-            margin-top: 50px;
-            margin-bottom: 300px;
-        }
 
-        .Abt33
-        {
+        .Abt33 {
             margin-left: 200px;
             margin-right: 100px;
             margin-top: 50px;
@@ -213,7 +226,7 @@
             /* height: 50%; */
         }
 
-        .PlayBtn{
+        .PlayBtn {
             position: absolute;
             top: 60%;
             left: 49%;
@@ -254,42 +267,6 @@
         }
 
 
-        .Container {
-            display: flex;
-            gap: 100px;
-            margin-top: 150px;
-            margin-bottom: 150px;
-            margin-left: 100px;
-            margin-right: 100px;
-            word-spacing: 5px;
-        }
-
-
-        #news {
-            text-align: left;
-            color: darkgoldenrod;
-            font-size: 50px;
-            background-color: whitesmoke;
-            width: 500px;
-        }
-
-        #new {
-            color: gold;
-            font-size: 40px;
-        }
-
-
-        .Art {
-            font-size: 21px;
-            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-            font-family: 'Cinzel Decorative', cursive;
-        }
-
-
-        .Cont {
-            flex-direction: column;
-            justify-content: center;
-        }
 
         .para {}
 
@@ -304,7 +281,7 @@
 
         .Abt4 {
             margin-top: 50px;
-            margin-bottom: 10px;
+            margin-bottom: 0;
         }
 
 
@@ -312,10 +289,10 @@
         .Containy {
             display: flex;
             gap: 80px;
-            margin-left: 100px;
-            margin-right: 100px;
+            margin-left: 300px;
+            margin-right: 200px;
             margin-top: 150px;
-            margin-bottom: 0.5%;
+            margin-bottom: 0;
             word-spacing: 5px;
             font-size: large;
         }
@@ -371,10 +348,10 @@
 
         #Socialhover3 {
             color: whitesmoke;
-            
+
         }
 
-        a:hover p#Socialhover3{
+        a:hover p#Socialhover3 {
             color: inherit;
             text-decoration: none;
             opacity: 0.1;
@@ -408,27 +385,33 @@
 
 
         .Faq {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            text-align: center;
+            max-width: 800px;
+            margin-top: 200px;
+            margin-left: 250px;
+            margin-bottom: 50px;
+            padding: 20px;
 
         }
 
-
-        .Conte {
-
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-size: 20px;
-            width: 200px;
-            border: 20px solid white;
+        .Faq1 p {
+            font-size: 15px;
             color: white;
-            padding: 150px;
-            margin-top: 0;
+            text-align: center;
 
         }
+
+        .Faq1 {
+            text-align: center;
+            background: #333;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+
+
+        }
+
 
 
         #Faqq {
@@ -439,15 +422,49 @@
 
 
 
-        .Feedback {
+        .Feedbac {
+            margin-top: auto;
             text-align: center;
-            margin-top: 1%;
             font-size: 20px;
         }
 
-        #Socialhover1 {
+        .Socialhover1 {
             font-size: 25px;
             font-family: monospace;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        dropdown-btn {
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+
+        dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        dropdown-content label {
+            display: block;
+            padding: 8px;
+        }
+
+        dropdown-content label:hover {
+            background-color: #f1f1f1;
+        }
+
+        dropdown:hover .dropdown-content {
+            display: block;
         }
 
 
@@ -489,14 +506,13 @@
         }
 
 
-        #Letschat
-        {
+        #Letschat {
             font-size: 20px;
             color: darkgoldenrod;
             border: 2px solid white;
             border-radius: 120px;
             padding: 10px;
-            
+
         }
 
 
@@ -509,29 +525,26 @@
             font-size: 20px;
         }
 
-        .FooterSocial
-        {
+        .FooterSocial {
             margin-top: 60px;
             margin-bottom: 0;
             gap: 2px;
         }
 
-        #Socialfooter1{
+        #Socialfooter1 {
             color: #E4405F;
         }
 
-        #Socialfooter2{
+        #Socialfooter2 {
             color: #1877F2;
         }
 
-        #Socialfooter4
-        {
+        #Socialfooter4 {
             color: #25D366;
         }
 
 
-        html
-        {
+        html {
             overflow-x: hidden;
         }
 
@@ -597,7 +610,7 @@
  -->
         </div>
 
-        <nav class="Navbar">
+        <nav id="Home" class="Navbar">
             <!--The nav contains the navbar and nav links styled with the flex display property,
             the logo-->
             <img src="" alt="">
@@ -618,7 +631,6 @@
             </ul>
 
         </nav>
-
 
     </header>
 
@@ -673,137 +685,54 @@
             </svg>
         </button>
 
- <script>
-    const video = document.getElementById('videoPlayer');
-    const btn = document.getElementById('PlayPauseBtn');
+        <script>
+            const video = document.getElementById('videoPlayer');
+            const btn = document.getElementById('PlayPauseBtn');
 
-    let hideTimeout;
+            let hideTimeout;
 
-    btn.addEventListener('click', () => {
-        if (video.paused) {
-            video.play().catch(error => {
-                console.error('Playback failed:', error);
+            btn.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play().catch(error => {
+                        console.error('Playback failed:', error);
+                    });
+                } else {
+                    video.pause();
+                }
             });
-        } else {
-            video.pause();
-        }
-    });
 
-    // When video starts playing
-    video.addEventListener('play', () => {
-        // Change button to "Pause"
-        // btn.textContent = 'Pause';
+            // When video starts playing
+            video.addEventListener('play', () => {
+                // Change button to "Pause"
+                // btn.textContent = 'Pause';
 
-        // Clear any existing timeout
-        clearTimeout(hideTimeout);
+                // Clear any existing timeout
+                clearTimeout(hideTimeout);
 
-        // Set timeout to hide the button after 2 seconds (adjust as needed)
-        hideTimeout = setTimeout(() => {
-            btn.style.display = 'none';
-        }, 1000);
-    });
+                // Set timeout to hide the button after 2 seconds (adjust as needed)
+                hideTimeout = setTimeout(() => {
+                    btn.style.display = 'none';
+                }, 1000);
+            });
 
-    // When video is paused
-    video.addEventListener('pause', () => {
-        // Change button back to "Play"
-        //btn.textContent = 'Play';
+            // When video is paused
+            video.addEventListener('pause', () => {
+                // Change button back to "Play"
+                //btn.textContent = 'Play';
 
-        // Show the button again
-        btn.style.display = 'inline-block';
+                // Show the button again
+                btn.style.display = 'inline-block';
 
-        // Clear any hiding timeout just in case
-        clearTimeout(hideTimeout);
-    });
-</script>
+                // Clear any hiding timeout just in case
+                clearTimeout(hideTimeout);
+            });
+        </script>
 
         <!-- <p id="Shop"><b>Shop Here</b></p> -->
         <a href="https://www.instagram.com/wealths.brand"><button id="buto"><b>Shop Here</b></button></a>
     </section>
     <br>
     <br>
-
-    <section class="Abt3">
-        <!--This section contains two div's. The parent div and the child div, which would be styled 
-        by the flex property. It has two Id's, a hyperlink that takes you to the source of the information and 
-        a target. It also has an em unit used in inline styling-->
-        <div class="Container">
-
-            <div class=" Cont">
-                <h1 id="news">NEWS & UPDATES</h1>
-                <h2 id="new">1. Wallpaper as Collectible Art</h2>
-
-                <p class="Art">Artist-designed wallpaper is exploding as immersive, limited edition art objects,
-                    hand-painted and
-                    silkscreened installations by Laura Owens, Dominique Fung, Kerstin Brätsch, Kiriakos Tompolidis,
-                    Philip Wiegard, and more at Matthew Marks Gallery and Brooklyn’s Independent Art Fair.</p>
-
-                <p class="Art"><a
-                        href="https://www.townandcountrymag.com/style/home-decor/a65488335/artist-wallpaper-trend-2025/"
-                        target="_parent">Is Wallpaper the Art World’s Next Big Thing?<br><strong>Read more:</strong>
-                        (Town &amp; Country)</a></p>
-                <br>
-                <br>
-
-
-                <h2 id="new">2. Matthew Barney’s <em>TACTICAL parallax</em> at AIR Aspen</h2>
-
-                <p class="Art">Provocateur Matthew Barney premieres a live “western” performance in a repurposed WWII
-                    drill hall
-                    fusing <em>Redoubt</em> (2018) and <em>Secondary</em> (2023) to explore American violence through
-                    football and wilderness at Aspen Art Museum’s AIR 2025 festival.</p>
-
-                <p class="Art"><a
-                        href="https://www.theguardian.com/artanddesign/2025/jul/29/matthew-barney-artist-tactical-parallax"
-                        target="_parent">Matthew Barney: ‘I’m not interested in participating in consensus culture’ (The
-                        Guardian) <br><strong>Read more:</strong></a></p>
-                <br>
-                <br>
-
-
-                <h2 id="new">3. <em>Andy Goldsworthy: Fifty Years</em> at the RSA, Edinburgh</h2>
-
-                <p class="Art">Over 200 works by the British land-artist, stone cairns, ice sculptures, sheepskin
-                    staircases,
-                    barbed-wire installations, reframe minimalism as nature’s geometry in the Royal Scottish Academy’s
-                    largest indoor survey ever.</p>
-
-                <p class="Art"><a href="https://www.nationalgalleries.org/exhibition/andy-goldsworthy-fifty-years"
-                        target="_parent">Andy Goldsworthy: Fifty Years (National Galleries of Scotland) <br><strong>Read
-                            more:</strong> </a></p>
-
-                <br>
-                <br>
-
-                <h2 id="new">4. AI Art’s “Builders” vs. “Breakers”</h2>
-
-                <p class="Art">Peter Bauman’s essay in <em>The Art Newspaper</em> unpacks whether AI artists are
-                    constructive
-                    pioneers forging new aesthetics or disruptive forces upending authorship, ultimately showing they’re
-                    often both.</p>
-
-                <p class="Art"><a
-                        href="https://www.theartnewspaper.com/2025/07/11/why-artificial-intelligence-artists-can-be-seen-as-builders-breakersor-both-at-once"
-                        target="_parent">Why artificial intelligence artists can be seen as ‘builders’, ‘breakers’ or
-                        both at once (The Art Newspaper) <br><strong>Read more:</strong></a></p>
-
-
-                <br>
-                <br>
-                <h2 id="new">5. Museum of AI Art: <em>Dataland</em> (LA, late 2025)</h2>
-
-                <p class="Art">Co-founded by Refik Anadol, Dataland will be the first museum dedicated entirely to AI
-                    art, 20,000 sq
-                    ft of data driven “paintings” and “sculptures” under one roof next to MOCA and The Broad.</p>
-
-                <p class="Art"><a
-                        href="https://www.theguardian.com/us-news/2024/sep/25/ai-art-museum-los-angeles-dataland"
-                        target="_parent">World’s first AI art museum to explore ‘creative potential of machines’ in LA
-                        (The Guardian) <br><strong>Read more:</strong> </a></p>
-
-
-            </div>
-        </div>
-    </section>
 
 
     <section class="Abt33">
@@ -860,19 +789,28 @@
         showParagraph();
     </script>
 
-    <section>
-        <div class="Faq">
-            <div class="Conte">
-                <h2 id="Faqq"><b>FAQ</b></h2>
-                <p id="Socialhover2"><b>Q:</b> What sizes of portraits do you sell?</p>
-                <p id="Socialhover2"><b>A: </b>All sizes are available.</p>
-                <p id="Socialhover2"><b>Q: </b>Do you sell only portraits?</p>
-                <p id="Socialhover2"><b>A: </b>We sell portraits, merch, and do freestyling.</p>
-                <p id="Socialhover2"><b>Q: </b>Do you sell customized portraits?</p>
-                <p id="Socialhover2"><b>A: </b>Yes we do.</p>
-            </div>
+    <section class="Faq">
+        <h2 id="Faqq"><b>FAQ</b></h2>
+
+        <div class="Faq1">
+            <p id="Socialhover2"><b>Q:</b> What sizes of portraits do you sell?</p>
+        </div>
+        <div class="Faq1">
+            <p id="Socialhover2"><b>A: </b>All sizes are available.</p>
+        </div>
+        <div class="Faq1">
+            <p id="Socialhover2"><b>Q: </b>Do you sell only portraits?</p>
+        </div>
+        <div class="Faq1">
+            <p id="Socialhover2"><b>A: </b>We sell portraits, merch, and do freestyling.</p>
         </div>
 
+        <div class="Faq1">
+            <p id="Socialhover2"><b>Q: </b>Do you sell customized portraits?</p>
+        </div>
+        <div class="Faq1">
+            <p id="Socialhover2"><b>A: </b>Yes we do.</p>
+        </div>
     </section>
 
     <section class="Abt4">
@@ -910,44 +848,71 @@
     </section>
 
     <!--This section has a single class for feedback, and three Id's-->
-    <section class="Feedback">
+    <section class="Feedbac">
         <h2 id="Faqq">Feedback</h2>
-        <p id="Socialhover1">What has been your experience?</p>
-        <input type="checkbox" id="Check">
-        <label for="Excellent">Excellent</label>
-        <input type="checkbox" id="Check">
-        <label for="Good">Good</label>
-        <input type="checkbox" id="Check">
-        <label for="Medium">Medium</label>
-        <input type="checkbox" id="Check">
-        <label for="Bad">Bad</label>
-        <input type="checkbox" id="Check">
-        <label for="Poor">Poor</label>
+        <p class="Socialhover1">What has been your experience?
+            <!-- <select>
+           <option>
+            <input type="checkbox" id="Check">
+            <label for="Excellent"><span style="font-size: 20px; font-family: monospace;">Excellent
+            </span></label>
+            <input type="checkbox" id="Check">
+            <label for="Good"><span style="font-size: 20px; font-family: monospace;">Good
+            </span></label>
+            <input type="checkbox" id="Check">
+            <label for="Medium">Medium</label>
+            <input type="checkbox" id="Check">
+            <label for="Bad">Bad</label>
+            <input type="checkbox" id="Check">
+            <label for="Poor">Poor</label>
+            </option>
+            </select>
+        </p>
+
+ -->
+
+        <div class="dropdown">
+            <button class="dropdown-btn">Select Options</button>
+            <div class="dropdown-content">
+                <label><input type="checkbox" value="Option 1"> Excellent</label>
+                <label><input type="checkbox" value="Option 2"> Good</label>
+                <label><input type="checkbox" value="Option 3"> Fair</label>
+                <label><input type="checkbox" value="Option 3"> Poor</label>
+
+            </div>
+        </div>
+        </p>
+        <script>
+            document.querySelectorAll('.dropdown input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', () => {
+                    const selected = Array.from(document.querySelectorAll('.dropdown input[type="checkbox"]:checked'))
+                        .map(cb => cb.value);
+                    document.querySelector('.dropdown-btn').textContent = selected.length
+                        ? `Selected: ${selected.join(', ')}`
+                        : 'Select Options';
+                });
+            });
+        </script>
+
+        <p class="Socialhover1">Rate this page:
+            <input type="checkbox" id="Check">
+            <label for="Excellent">Excellent</label>
+            <input type="checkbox" id="Check">
+            <label for="Good">Good</label>
+            <input type="checkbox" id="Check">
+            <label for="Medium">Medium</label>
+            <input type="checkbox" id="Check">
+            <label for="Bad">Bad</label>
+            <input type="checkbox" id="Check">
+            <label for="Poor">Poor</label>
+        </p>
 
 
-        <p id="Socialhover1">Rate this page</p>
-        <input type="checkbox" id="Check">
-        <label for="Excellent">Excellent</label>
-        <input type="checkbox" id="Check">
-        <label for="Good">Good</label>
-        <input type="checkbox" id="Check">
-        <label for="Medium">Medium</label>
-        <input type="checkbox" id="Check">
-        <label for="Bad">Bad</label>
-        <input type="checkbox" id="Check">
-        <label for="Poor">Poor</label>
+        <p class="Socialhover1">Is there anything you'd like us to add? <textarea id="Text"></textarea></p>
 
-
-        <p id="Socialhover1">Is there anything you'd like us to add?</p>
-        <form>
-            <!--There a submit button, an anchor, two Id's and a placeholder for submit.-->
-            <label for="Feedback"></label>
-            <textarea id="Text"></textarea><br>
-            <a><button id="Butto" aria-placeholder="Submit">
-                    Submit</button></a>
-        </form>
-
-
+        <!--There a submit button, an anchor, two Id's and a placeholder for submit.-->
+        <a><button id="Butto" aria-placeholder="Submit">
+                Submit</button></a>
 
     </section>
 
@@ -962,25 +927,67 @@
 
     <br>
     <hr>
-    <footer>
-        <!--Contains the footer and socialmedia icons-->
-        &copy; VYX 2025
-        <section class="FooterSocial">
-            <a href="https://www.instagram.com/sciartist0" target="_parent" id="Socialfooter1">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/Toriah Bee" target="_parent" id="Socialfooter2">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://x.com/vyx_art" target="_parent" id="Socialfooter3">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://wa.me/+2349131211336" target="_parent" id="Socialfooter4">
-                <i class="fab fa-whatsapp"></i>
-            </a>
 
-        </section>
+
+    <!-- Top of the page -->
+    <a href="#home" id="scrollToggle" class="scroll-toggle">↓</a>
+
+
+    <footer>
+        <section id="footer">
+            <!--Contains the footer and socialmedia icons-->
+            &copy; VYX 2025
+            <section class="FooterSocial">
+                <a href="https://www.instagram.com/sciartist0" target="_parent" id="Socialfooter1">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/Toriah Bee" target="_parent" id="Socialfooter2">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://x.com/vyx_art" target="_parent" id="Socialfooter3">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://wa.me/+2349131211336" target="_parent" id="Socialfooter4">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </section>
     </footer>
+    <!-- Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scrollToggle = document.getElementById('scrollToggle');
+            const scrollTargets = Array.from(document.querySelectorAll('nav, section, footer'));
+
+            function updateArrow() {
+                const scrollPos = window.scrollY + window.innerHeight / 2;
+                let currentIndex = 0;
+
+                for (let i = 0; i < scrollTargets.length; i++) {
+                    const el = scrollTargets[i];
+                    if (
+                        scrollPos >= el.offsetTop &&
+                        scrollPos < el.offsetTop + el.offsetHeight
+                    ) {
+                        currentIndex = i;
+                        break;
+                    }
+                }
+
+                if (currentIndex < scrollTargets.length - 1) {
+                    scrollToggle.innerHTML = '↓';
+                    scrollToggle.href = `#${scrollTargets[currentIndex + 1].id}`;
+                } else {
+                    scrollToggle.innerHTML = '↑';
+                    scrollToggle.href = `#${scrollTargets[0].id}`;
+                }
+            }
+
+            window.addEventListener('scroll', updateArrow);
+            window.addEventListener('load', updateArrow);
+        });
+    </script>
+
 </body>
 
 </html>
