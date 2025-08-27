@@ -612,7 +612,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 5px solid gold;
+    border: 5px solid darkgoldenrod;
     border-radius: 14px;
     overflow: hidden;
     object-fit: contain;
@@ -623,6 +623,8 @@ footer {
     word-spacing: 2px;
     line-height: 25px;
     font-size: 20px;
+    text-align: center;
+    display: inline;
 }
 
 #form2 {
@@ -642,6 +644,12 @@ footer {
 
 #form2 a:hover {
     background-color: darkgoldenrod;
+}
+
+
+.Wphoto
+{
+    color: darkgoldenrod;
 }
 
 

@@ -20,6 +20,7 @@
             opacity: 0.85;
 
             color: white;
+            /* font-family: 'CoolArtFont', sans-serif; */
             overflow-x: hidden;
         }
 
@@ -37,7 +38,7 @@
             left: 50%;
             transform: translateX(-50%);
             font-size: 2rem;
-            background: #BF00FF;
+            background: darkgoldenrod;
             color: #111;
             padding: 5px 10px;
             border-radius: 50%;
@@ -128,8 +129,8 @@
         }
 
         nav a:hover {
-            color: darkgoldenrod;
-            background: linear-gradient(45deg, white);
+            /* color: darkgoldenrod; */
+            background: linear-gradient(45deg, darkgoldenrod);
             padding: 6px 12px;
             border-radius: 10px;
         }
@@ -138,7 +139,9 @@
 
         a {
             text-decoration-line: none;
-            color: white;
+            color: #BF00FF;
+            font-weight: 700;
+            font-size: 1.5rem;
         }
 
 
@@ -177,8 +180,7 @@
             margin-bottom: 100px;
         }
 
-        #news
-        {
+        #news {
             font-size: calc(4vw);
         }
 
@@ -199,7 +201,7 @@
         #About {
             text-align: center;
             margin-top: 20px;
-            font-size: calc(5.0vw);
+            font-size: calc(4.0vw);
             font-family: monospace;
         }
 
@@ -255,16 +257,55 @@
         }
 
         #buto {
-            border: 3px solid white;
+            /* border: 3px solid white;
             background-color: black;
             color: aliceblue;
             margin-top: 5px;
             margin-bottom: 5px;
-            margin-right: 5px;
+            /* margin-right: 5px; */
             margin-left: 80px;
             padding: 15px;
             font-size: 20px;
+            /* font-size: large; */
+            padding: 16px 10px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 700;
+            color: #fff;
+            background-color: #BF00FF;
+            /* background: linear-gradient(90deg, var(--purple), (var(--purple2))); */
+            box-shadow:
+                0 6px 20px rgba(191, 0, 255, 1),
+                0 0 18px rgba(160, 32, 240, 1),
+                0 0 60px rgba(191, 0, 255, 0.6);
+            transition: transform 18s ease, box-shadow .18s ease;
         }
+
+
+
+        #Buto:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(57, 255, 20, 0.28), 0 0 12px rgba(0, 255, 209, 0.12);
+        }
+
+        #Buto:active {
+            transform: translateY(-1px) scale(.995);
+        }
+
+        #Buto:focus {
+            outline: 3px;
+            solid rgba(57, 255, 20, 0.14);
+            outline-offset: 6px;
+        }
+
+        #Buto[diabled] {
+            opacity: .5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+
 
 
         a :hover {
@@ -337,7 +378,7 @@
 
 
         .Conty {
-            color: #f39c12;
+            color: darkgoldenrod;
             /* hover color */
         }
 
@@ -353,6 +394,8 @@
 
         #Socialhover3 {
             color: whitesmoke;
+            font-family: 'CoolArtFont', sans-serif;
+
 
         }
 
@@ -369,7 +412,7 @@
 
 
         #Socialhover a:hover {
-            background-color: gold;
+            background-color: darkgoldenrod;
         }
 
         .Wapp {
@@ -426,6 +469,10 @@
         }
 
 
+        @font-face {
+            font-family: 'CoolArtFont';
+            src: url('/fonts/cool-art-font.woff2') format('woff2');
+        }
 
         .Feedbac {
             margin-top: auto;
@@ -435,8 +482,15 @@
         }
 
         .Socialhover1 {
-            font-size: 25px;
-            font-family: monospace;
+            font-size: 20px;
+            font-family: 'CoolArtFont', sans-serif;
+
+        }
+
+        .drop {
+            border: 0 2px solid white;
+            border-radius: 200px;
+            background-color: #333;
         }
 
         .dropdown {
@@ -445,6 +499,7 @@
         }
 
         .dropdown-btn {
+
             padding: 10px;
             border: 1px solid #ccc;
             background-color: #f9f9f9;
@@ -473,25 +528,59 @@
             display: block;
         }
 
-        #Texts 
-        {
+        #Texts {
             width: 800px;
         }
 
 
         #Butto {
             font-size: large;
-            padding: 20px;
+            padding: 1rem 1.2rem;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 700;
+            color: #fff;
+            background-color: #BF00FF;
+            /* background: linear-gradient(90deg, var(--purple), (var(--purple2))); */
+            box-shadow:
+                0 6px 20px rgba(191, 0, 255, 1),
+                0 0 18px rgba(160, 32, 240, 1),
+                0 0 60px rgba(191, 0, 255, 0.6);
+            transition: transform 18s ease, box-shadow .18s ease;
         }
 
-        form a :hover {
+
+
+        #Butto:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(57, 255, 20, 0.28), 0 0 12px rgba(0, 255, 209, 0.12);
+        }
+
+        #Butto:active {
+            transform: translateY(-1px) scale(.995);
+        }
+
+        #Butto:focus {
+            outline: 3px;
+            solid rgba(57, 255, 20, 0.14);
+            outline-offset: 6px;
+        }
+
+        #Butto[diabled] {
+            opacity: .5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* form a :hover {
             color: whitesmoke;
             background: linear-gradient(45deg, gold);
             padding: 6px 12px;
             border-radius: 10px;
 
         }
-
+ */
 
         .Wapp {
             text-align: right;
@@ -507,7 +596,7 @@
         .Wapp :hover {
             padding: 3px;
             background-color: black;
-            color: goldenrod;
+            color: darkgoldenrod;
         }
 
 
@@ -519,12 +608,49 @@
 
         #Letschat {
             font-size: 20px;
-            color: darkgoldenrod;
+            /* color: darkgoldenrod; */
             border: 2px solid white;
             border-radius: 120px;
             padding: 10px;
-
+            font-size: large;
+            /* padding: 2rem 1.8rem; */
+            /* border-radius: 12px; */
+            cursor: pointer;
+            font-weight: 700;
+            color: #fff;
+            background-color: #BF00FF;
+            /* background: linear-gradient(90deg, var(--purple), (var(--purple2))); */
+            box-shadow:
+                0 6px 20px rgba(191, 0, 255, 1),
+                0 0 18px rgba(160, 32, 240, 1),
+                0 0 60px rgba(191, 0, 255, 0.6);
+            transition: transform 18s ease, box-shadow .18s ease;
         }
+
+
+
+        #Letschat:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(57, 255, 20, 0.28), 0 0 12px rgba(0, 255, 209, 0.12);
+        }
+
+        #Letschat:active {
+            transform: translateY(-1px) scale(.995);
+        }
+
+        #Letschat:focus {
+            outline: 3px;
+            solid rgba(57, 255, 20, 0.14);
+            outline-offset: 6px;
+        }
+
+        #Letschat[diabled] {
+            opacity: .5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
 
 
 
@@ -862,7 +988,7 @@
     <!--This section has a single class for feedback, and three Id's-->
     <section class="Feedbac">
         <h2 id="Faqq">Feedback</h2>
-            <!-- <select>
+        <!-- <select>
            <option>
             <input type="checkbox" id="Check">
             <label for="Excellent"><span style="font-size: 20px; font-family: monospace;">Excellent
@@ -881,30 +1007,29 @@
         </p>
 
  -->
+        <div class="drop">
+            <div class="dropdown">
+                <p class="Socialhover1">Your experience?</p>
+                <button class="dropdown-btn">Select Option</button>
+                <div class="dropdown-content">
+                    <label><input type="checkbox" value="Option 1"> Excellent</label>
+                    <label><input type="checkbox" value="Option 2"> Good</label>
+                    <label><input type="checkbox" value="Option 3"> Fair</label>
+                    <label><input type="checkbox" value="Option 3"> Poor</label>
 
-        <div class="dropdown">
-            <p class="Socialhover1">Rate your experience on the page?</p>
-            <button class="dropdown-btn">Select Option</button>
-            <div class="dropdown-content">
-                <label><input type="checkbox" value="Option 1"> Excellent</label>
-                <label><input type="checkbox" value="Option 2"> Good</label>
-                <label><input type="checkbox" value="Option 3"> Fair</label>
-                <label><input type="checkbox" value="Option 3"> Poor</label>
-
+                </div>
             </div>
-        </div>
-<br>
-                <div class="dropdown">
-            <p class="Socialhover1">Rate this page</p>
-            <button class="dropdown-btn">Select Option</button>
-            <div class="dropdown-content">
-                <label><input type="checkbox" value="Option 1"> Excellent</label>
-                <label><input type="checkbox" value="Option 2"> Good</label>
-                <label><input type="checkbox" value="Option 3"> Fair</label>
-                <label><input type="checkbox" value="Option 3"> Poor</label>
-
+        <br>
+            <div class="dropdown">
+                <p class="Socialhover1">Rate this page</p>
+                <button class="dropdown-btn">Select Option</button>
+                <div class="dropdown-content">
+                    <label><input type="checkbox" value="Option 1"> Excellent</label>
+                    <label><input type="checkbox" value="Option 2"> Good</label>
+                    <label><input type="checkbox" value="Option 3"> Fair</label>
+                    <label><input type="checkbox" value="Option 3"> Poor</label>
+                </div>
             </div>
-        </div>
 
         <script>
             document.querySelectorAll('.dropdown input[type="checkbox"]').forEach(checkbox => {
@@ -918,9 +1043,7 @@
             });
         </script>
 
-
-        <p class="Socialhover1">Is there anything you'd like us to add?<br><br> <textarea id="Texts"></textarea></p>
-
+            <p class="Socialhover1">Is there anything you'd like us to add?<br><br> <textarea id="Texts"></textarea></p>
         <!--There a submit button, an anchor, two Id's and a placeholder for submit.-->
         <a><button id="Butto" aria-placeholder="Submit">
                 Submit</button></a>
