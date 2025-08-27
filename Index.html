@@ -37,9 +37,9 @@
             left: 50%;
             transform: translateX(-50%);
             font-size: 2rem;
-            background: #000;
-            color: #fff;
-            padding: 10px 15px;
+            background: #BF00FF;
+            color: #111;
+            padding: 5px 10px;
             border-radius: 50%;
             text-decoration: none;
             z-index: 1000;
@@ -595,7 +595,7 @@
         <div class="header">
 
             <video autoplay muted loop id="Bg-video">
-                <source src="Freepik2.mp4" type="video/mp4">
+                <source src="FreePikT1.mp4" type="video/mp4">
             </video>
             <div class="Overlay">
                 <p style="font-size: 30px;"><i>Visio. Ymaginatio. Xylographia</i></p>
@@ -929,7 +929,7 @@
 
 
     <!-- Top of the page -->
-    <a href="#home" id="scrollToggle" class="scroll-toggle">↓</a>
+    <a href="#home" id="scrollToggle" class="scroll-toggle">^</a>
 
 
     <footer>
@@ -974,7 +974,7 @@
                 }
 
                 if (currentIndex < scrollTargets.length - 1) {
-                    scrollToggle.innerHTML = '↓';
+                    scrollToggle.innerHTML = '^';
                     scrollToggle.href = `#${scrollTargets[currentIndex + 1].id}`;
                 } else {
                     scrollToggle.innerHTML = '↑';
