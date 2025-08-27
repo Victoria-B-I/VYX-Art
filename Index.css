@@ -153,13 +153,20 @@ footer {
 
 
 
+.dropdown-wrapper {
+    width: 100%;
+    text-align: center;
+    /* Centers inline-block children */
+}
+
+
 .dropdownn {
     position: relative;
     display: inline-block;
     margin: 10px 20px;
 }
 
-.dropdownncontent {
+/* .dropdownncontent {
     display: none;
     position: absolute;
     background-color: #ff9800;
@@ -167,7 +174,22 @@ footer {
     z-index: 1;
     top: 100%;
     left: 0;
+} */
+
+
+
+.dropdownncontent {
+    display: none;
+    position: absolute;
+    background-color: darkgoldenrod;
+    padding: 10px;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* This centers it under the trigger */
 }
+
 
 .dropdownn:hover .dropdownncontent {
     display: block;
@@ -185,12 +207,11 @@ footer {
     color: white;
     cursor: pointer;
     display: block;
-    /* background-color: #333; */
-    /* optional background */
     padding: 10px;
-    /* margin-left: 600px; */
     font-size: calc(3vw);
 }
+
+
 
 
 
@@ -444,6 +465,79 @@ footer {
     background-color: black;
 }
 
+#PlaceOrder {
+    margin-left: 3%;
+    position: fixed;
+    z-index: 1000;
+    bottom: 3%;
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+#PlaceOrder a:hover {
+    background-color: darkgoldenrod;
+    padding: 10px;
+}
+
+#PlaceOrder a {
+    text-align: center;
+    color: #BF00FF;
+
+
+}
+
+
+
+
+#PlaceOrders {
+    margin-left: 70%;
+    position: fixed;
+    z-index: 1000;
+    bottom: 3%;
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+#PlaceOrders a:hover {
+    background-color: darkgoldenrod;
+    padding: 10px;
+}
+
+#PlaceOrders a {
+    text-align: center;
+    color: #BF00FF;
+
+
+}
+
+
+
+#PlaceOrderly {
+    margin-left: 85%;
+    position: fixed;
+    z-index: 1000;
+    bottom: 3%;
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+#PlaceOrderly a:hover {
+    background-color: darkgoldenrod;
+    padding: 10px;
+}
+
+#PlaceOrderly a {
+    text-align: center;
+    color: #BF00FF;
+
+
+}
+
+
+
 
 
 
@@ -484,15 +578,25 @@ footer {
     font-size: 5vw;
 }
 
+
 .AboutWB {
     text-align: left;
     font-size: large;
     margin-left: 100px;
     margin-right: 200px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.AboutWBB {
+    text-align: center;
+    font-size: large;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .Wphoto {
-    font-size: 50px;
+    font-size: calc(6vw);
     text-align: center;
 }
 
