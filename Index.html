@@ -18,6 +18,7 @@
             background-color:
                 rgba(0, 0, 0, 0.85);
             opacity: 0.85;
+            size: 100%;
 
             color: white;
             /* font-family: 'CoolArtFont', sans-serif; */
@@ -174,7 +175,8 @@
 
 
         .Abt33 {
-            margin-left: 200px;
+            max-width: 100%;
+            margin-left: 100px;
             margin-right: 100px;
             margin-top: 50px;
             margin-bottom: 100px;
@@ -218,6 +220,7 @@
 
 
         .Wealth {
+            max-width: 100%;
             text-align: center;
             margin-top: 100px;
             margin-bottom: 100px;
@@ -334,6 +337,7 @@
 
         .Containy {
             display: flex;
+            /* flex-wrap: wrap; */
             gap: 80px;
             margin-left: 300px;
             margin-right: 200px;
@@ -341,6 +345,7 @@
             margin-bottom: 0;
             word-spacing: 5px;
             font-size: large;
+            max-width: 100%;
         }
 
 
@@ -434,9 +439,10 @@
 
         .Faq {
             text-align: center;
-            max-width: 800px;
+            max-width: 100%;
             margin-top: 200px;
-            margin-left: 250px;
+            margin-left: 100px;
+            margin-right: 100px;
             margin-bottom: 10px;
             padding: 20px;
 
@@ -710,14 +716,37 @@
                 --spacing: 12px;
                 --background-color: #fff;
             }
+
+            .Wealth {
+                flex-direction: column;
+                text-align: center;
+
+            }
+
+            .Wealth video {
+                max-width: 80%;
+                margin-left: 20%;
+            }
         }
 
         @media (max-width: 480px) {
             :root {
-                --font-size-heading: 1.5rem;
-                --font-size-body: 0.8rem;
+                --font-size-heading: 2rem;
+                --font-size-body: 1rem;
                 --spacing: 10px;
             }
+
+            .Wealth {
+                flex-direction: column;
+                text-align: center;
+
+            }
+
+            .Wealth video {
+                max-width: 80%;
+                margin-left: 20%;
+            }
+
         }
     </style>
 
@@ -1048,26 +1077,26 @@
             <a><button id="Butto" aria-placeholder="Submit">
                     Submit</button></a>
 
-                <!-- Placeholder for submission message -->
-                <div id="confirmationMessage" style="margin-top: 10px; color: darkgoldenrod; display: none;">
-                    Form has been submitted!
-                </div>
+            <!-- Placeholder for submission message -->
+            <div id="confirmationMessage" style="margin-top: 10px; color: darkgoldenrod; display: none;">
+                Form has been submitted!
+            </div>
 
-                <script>
-                    const button = document.getElementById("Butto");
-                    const message = document.getElementById("confirmationMessage");
+            <script>
+                const button = document.getElementById("Butto");
+                const message = document.getElementById("confirmationMessage");
 
-                    button.addEventListener("click", () => {
-                        button.textContent = "Submitted";
-                        message.style.display = "block";
+                button.addEventListener("click", () => {
+                    button.textContent = "Submitted";
+                    message.style.display = "block";
 
-                        // Hide the message after 3 seconds
-                        setTimeout(() => {
-                            message.style.display = "none";
-                            button.textContent = "Submit"; // Optionally reset the button text
-                        }, 3000); // 3000 ms = 3 seconds
-                    });
-                </script>
+                    // Hide the message after 3 seconds
+                    setTimeout(() => {
+                        message.style.display = "none";
+                        button.textContent = "Submit"; // Optionally reset the button text
+                    }, 3000); // 3000 ms = 3 seconds
+                });
+            </script>
 
     </section>
 

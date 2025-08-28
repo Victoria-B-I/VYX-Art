@@ -618,6 +618,7 @@ footer {
 
 .Wtimg {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
     gap: 10px;
     width: 100%;
@@ -626,6 +627,7 @@ footer {
 
 .wthimg {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     border: 5px solid darkgoldenrod;
@@ -754,6 +756,7 @@ p {
         --font-size-body: 0.9rem;
         --spacing: 12px;
     }
+
 }
 
 @media (max-width: 480px) {
