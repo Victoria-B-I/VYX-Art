@@ -39,8 +39,8 @@ nav {
 }
 
 nav a:hover {
-    color: darkgoldenrod;
-    background: linear-gradient(45deg, white);
+    /* color: darkgoldenrod; */
+    background: linear-gradient(45deg, darkgoldenrod);
     padding: 6px 12px;
     border-radius: 10px;
 }
@@ -49,13 +49,19 @@ nav a:hover {
 
 a {
     text-decoration-line: none;
-    color: white;
+    color: darkgoldenrod;
+}
+
+
+@font-face {
+    font-family: 'CoolArtFont';
+    src: url('/fonts/cool-art-font.woff2') format('woff2');
 }
 
 
 
 h2 {
-    color: gold;
+    color: darkgoldenrod;
     padding: 20px;
 }
 
@@ -90,16 +96,16 @@ img:hover {
 
 a :hover {
     padding: 20px;
-    background-color: white;
-    color: gold;
+    background-color: darkgoldenrod;
+    /* color: gold; */
 }
 
 
 
 
-.Shop {
+/* .Shop {
     text-align: center;
-}
+} */
 
 .WTSB {
     margin-top: 200px;
@@ -235,7 +241,9 @@ footer {
 
 .Navba a {
     background-color: transparent;
-    color: white;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 
@@ -267,6 +275,8 @@ footer {
     font-size: 20px;
     margin-left: 50px;
     margin-right: 50px;
+    font-family: 'CoolArtFont', sans-serif;
+
 }
 
 .Gally {
@@ -458,7 +468,7 @@ footer {
 .Wapp :hover {
     padding: 10px;
     background-color: black;
-    color: goldenrod;
+    color: darkgoldenrod;
 }
 
 .Wapp a {
@@ -558,6 +568,12 @@ footer {
     z-index: -1;
 }
 
+.Navbart a {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
 
 
 .Navlinkt {
@@ -619,7 +635,7 @@ footer {
 }
 
 .parag {
-    font-family: sans-serif;
+    font-family: 'CoolArtFont', sans-serif;
     word-spacing: 2px;
     line-height: 25px;
     font-size: 20px;
@@ -644,12 +660,56 @@ footer {
 
 #form2 a:hover {
     background-color: darkgoldenrod;
+    color: black;
 }
 
 
-.Wphoto
-{
+.Wphoto {
     color: darkgoldenrod;
+}
+
+#WealthRead {
+    font-family: 'CoolArtFont', sans-serif;
+}
+
+#WealthRead:hover {
+    color: black;
+}
+
+
+.shopy
+{
+    text-align: center;
+    
+}
+
+
+
+#Shopo {
+    font-family: 'CoolArtFont', sans-serif;
+    display: inline-block;
+    justify-content: content;
+    font-size: large;
+    padding: 10px 5px;
+    border: 2px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff;
+    background-color: #BF00FF;
+    /* background: linear-gradient(90deg, var(--purple), (var(--purple2))); */
+    box-shadow:
+        0 6px 20px rgba(191, 0, 255, 1),
+        0 0 18px rgba(160, 32, 240, 1),
+        0 0 60px rgba(191, 0, 255, 0.6);
+    transition: transform 18s ease, box-shadow .18s ease;
+
+}
+
+
+.shopy #Shopo a:hover
+{
+    color: black;
 }
 
 

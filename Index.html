@@ -139,7 +139,7 @@
 
         a {
             text-decoration-line: none;
-            color: #BF00FF;
+            color: whitesmoke;
             font-weight: 700;
             font-size: 1.5rem;
         }
@@ -1019,7 +1019,7 @@
 
                 </div>
             </div>
-        <br>
+            <br>
             <div class="dropdown">
                 <p class="Socialhover1">Rate this page</p>
                 <button class="dropdown-btn">Select Option</button>
@@ -1031,22 +1031,43 @@
                 </div>
             </div>
 
-        <script>
-            document.querySelectorAll('.dropdown input[type="checkbox"]').forEach(checkbox => {
-                checkbox.addEventListener('change', () => {
-                    const selected = Array.from(document.querySelectorAll('.dropdown input[type="checkbox"]:checked'))
-                        .map(cb => cb.value);
-                    document.querySelector('.dropdown-btn').textContent = selected.length
-                        ? `Selected: ${selected.join(', ')}`
-                        : 'Select Options';
+            <script>
+                document.querySelectorAll('.dropdown input[type="checkbox"]').forEach(checkbox => {
+                    checkbox.addEventListener('change', () => {
+                        const selected = Array.from(document.querySelectorAll('.dropdown input[type="checkbox"]:checked'))
+                            .map(cb => cb.value);
+                        document.querySelector('.dropdown-btn').textContent = selected.length
+                            ? `Selected: ${selected.join(', ')}`
+                            : 'Select Options';
+                    });
                 });
-            });
-        </script>
+            </script>
 
             <p class="Socialhover1">Is there anything you'd like us to add?<br><br> <textarea id="Texts"></textarea></p>
-        <!--There a submit button, an anchor, two Id's and a placeholder for submit.-->
-        <a><button id="Butto" aria-placeholder="Submit">
-                Submit</button></a>
+            <!--There a submit button, an anchor, two Id's and a placeholder for submit.-->
+            <a><button id="Butto" aria-placeholder="Submit">
+                    Submit</button></a>
+
+                <!-- Placeholder for submission message -->
+                <div id="confirmationMessage" style="margin-top: 10px; color: darkgoldenrod; display: none;">
+                    Form has been submitted!
+                </div>
+
+                <script>
+                    const button = document.getElementById("Butto");
+                    const message = document.getElementById("confirmationMessage");
+
+                    button.addEventListener("click", () => {
+                        button.textContent = "Submitted";
+                        message.style.display = "block";
+
+                        // Hide the message after 3 seconds
+                        setTimeout(() => {
+                            message.style.display = "none";
+                            button.textContent = "Submit"; // Optionally reset the button text
+                        }, 3000); // 3000 ms = 3 seconds
+                    });
+                </script>
 
     </section>
 
